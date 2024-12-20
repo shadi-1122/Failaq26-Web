@@ -1,0 +1,912 @@
+[
+  {
+    "id": 1,
+    "Username": "Shahin Shadi CK",
+    "adno": "1122",
+    "Name": "Shahin Shadi CK",
+    "Guardian": "Nisar Ahammed CK",
+    "address": "Cheleckodan (H), Nilaparambil, Kuttor North (PO)",
+    "dateofbirth": "12-04-2011",
+    "bloodgroup": "A+",
+    "phone": "7561854514",
+    "Password": "1122",
+    "Photo": "Photo/1122.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1122.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1122.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1122.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1122.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1122.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1122.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1122.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1122.pdf" }
+    ]
+  },
+
+  {
+    "id": 2,
+    "Username": "Afnan Ahmed",
+    "adno": "1096",
+    "Name": "Afnan Ahmed K",
+    "Guardian": "Jamsheer K",
+    "address": "KADERI (H), ALATHOORPADI,MELMURI(PO), MALAPPPURAM,MALAPPURAM, 676517",
+    "dateofbirth": "27-07-2010",
+    "bloodgroup": "B+",
+    "phone": "9946139457",
+    "Password": "1096",
+    "Photo": "Photo/1096.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1096.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1096.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1096.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1096.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1096.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1096.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1096.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1096.pdf" }
+    ]
+  },
+
+  {
+    "id": 3,
+    "Username": "Irfan Razim",
+    "adno": "1097",
+    "Name": "Irfan Razim V",
+    "Guardian": "Yousufali V",
+    "address": "VALAPPIL(H),PANDIKASHALA,KOORIYAD(PO),VENGARA,MALAPPURAM,676306",
+    "dateofbirth": "12-09-2010",
+    "bloodgroup": "",
+    "phone": "9048795785",
+    "Password": "1097",
+    "Photo": "Photo/1097.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1097.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1097.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1097.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1097.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1097.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1097.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1097.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1097.pdf" }
+    ]
+  },
+
+  {
+    "id": 4,
+    "Username": "Hanan",
+    "adno": "1098",
+    "Name": "Hanan BK",
+    "Guardian": "Haris Bk",
+    "address": "CHAKKODUVIL(H), KODAKALLU, CHULLIPPARA(PO),THIRURANGADI,MALAPPURAM,676508 ",
+    "dateofbirth": "01-09-2010",
+    "bloodgroup": "O+",
+    "phone": "9656550185",
+    "Password": "1098",
+    "Photo": "Photo/1098.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1098.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1098.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1098.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1098.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1098.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1098.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1098.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1098.pdf" }
+    ]
+  },
+
+  {
+    "id": 5,
+    "Username": "Ayman",
+    "adno": "1099",
+    "Name": "Mohammed Ayman E",
+    "Guardian": "Tajudheen E",
+    "address": "ELAYI(H), CHETTIYAMKINAR, KLARI(PO), KOZHICHENA, MALAPPURAM, 676501",
+    "dateofbirth": "11-03-2011",
+    "bloodgroup": "AB+",
+    "phone": "9645807887",
+    "Password": "1099",
+    "Photo": "Photo/1099.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1099.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1099.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1099.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1099.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1099.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1099.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1099.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1099.pdf" }
+    ]
+  },
+
+  {
+    "id": 6,
+    "Username": "Siyad",
+    "adno": "1100",
+    "Name": "Muhammed Siyad PV",
+    "Guardian": "Ansarali Pv",
+    "address": "POOVAN VALAPPIL(H),CHOLAKKUNDU,PARAPPUR (PO),KOTTAKKAL, MALAPPURAM,676503",
+    "dateofbirth": "29-09-2010",
+    "bloodgroup": "B+",
+    "phone": "9562948757",
+    "Password": "1100",
+    "Photo": "Photo/1100.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1100.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1100.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1100.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1100.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1100.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1100.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1100.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1100.pdf" }
+    ]
+  },
+
+  {
+    "id": 7,
+    "Username": "Aamir",
+    "adno": "1101",
+    "Name": "Mohammed Aamir PT",
+    "Guardian": "Ummar Pt",
+    "address": "PULIKKATHODI(H),MANKADA,VELLILA(PO),MANJERI,MALAPPURAM,679324",
+    "dateofbirth": "12-10-2010",
+    "bloodgroup": "O+",
+    "phone": "9745100465",
+    "Password": "1101",
+    "Photo": "Photo/1101.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1101.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1101.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1101.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1101.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1101.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1101.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1101.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1101.pdf" }
+    ]
+  },
+
+  {
+    "id": 8,
+    "Username": "Nasweeh",
+    "adno": "1102",
+    "Name": "Muhammed Nasweeh vp",
+    "Guardian": "Said Muhammed Vp",
+    "address": "VALIPARAMBIL (H), KANKOTTUCHIRA, CHARUKARA (PO), PERUTHALMANNA, MALAPPURAM,679340",
+    "dateofbirth": "19-08-2011",
+    "bloodgroup": "B+",
+    "phone": "8089331791",
+    "Password": "1102",
+    "Photo": "Photo/1102.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1102.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1102.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1102.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1102.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1102.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1102.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1102.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1102.pdf" }
+    ]
+  },
+
+  {
+    "id": 9,
+    "Username": "Haseeb",
+    "adno": "1104",
+    "Name": "Muhammed Haseeb P",
+    "Guardian": "Abdul Gafoor P",
+    "address": "PARAMMAL(H), KACHERIPADI, VALIYORA(PO), VENGARA, MALAPPURAM, 676304",
+    "dateofbirth": "16-02-2012",
+    "bloodgroup": "A+",
+    "phone": "9747770796",
+    "Password": "1104",
+    "Photo": "Photo/1104.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1104.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1104.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1104.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1104.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1104.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1104.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1104.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1104.pdf" }
+    ]
+  },
+
+  {
+    "id": 10,
+    "Username": "Afshar",
+    "adno": "1105",
+    "Name": "Muhammed Afshar M",
+    "Guardian": "Aneesh M",
+    "address": "MUSLIYARAKATH(H), WEST VILLOOR, INDIANOOR(PO), KOTTAKKAL, MALAPPURAM, 676503",
+    "dateofbirth": "27-09-2011",
+    "bloodgroup": "B+",
+    "phone": "9946633962",
+    "Password": "1105",
+    "Photo": "Photo/1105.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1105.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1105.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1105.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1105.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1105.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1105.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1105.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1105.pdf" }
+    ]
+  },
+
+  {
+    "id": 11,
+    "Username": "Risal",
+    "adno": "1106",
+    "Name": "Muhammed Risal Raeesudheen k",
+    "Guardian": "Raeesudheen K",
+    "address": "KUZHIKKATTIL(H),PERUMANNA,VALAKKULAM(PO),KOZHICHENA,MALAPPURAM,676508",
+    "dateofbirth": "19-11-2011",
+    "bloodgroup": "O+",
+    "phone": "9847306483",
+    "Password": "1106",
+    "Photo": "Photo/1106.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1106.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1106.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1106.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1106.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1106.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1106.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1106.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1106.pdf" }
+    ]
+  },
+
+  {
+    "id": 12,
+    "Username": "Sinan",
+    "adno": "1107",
+    "Name": "Muhammed Sinan CK",
+    "Guardian": "Abdul Bari Ck",
+    "address": "CHAKALAKKUNNAN(H),PULLIYILANGADI,ANAKKAYAM(PO),ANAKKAYAM,MALAPPURAM,676509",
+    "dateofbirth": "29-07-2011",
+    "bloodgroup": "B+",
+    "phone": "9447756521",
+    "Password": "1107",
+    "Photo": "Photo/1107.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1107.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1107.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1107.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1107.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1107.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1107.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1107.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1107.pdf" }
+    ]
+  },
+
+  {
+    "id": 13,
+    "Username": "Shahas",
+    "adno": "1108",
+    "Name": "Muhammed Shahas AC",
+    "Guardian": "Shamsudheen Ac",
+    "address": "ARIKKAN CHOLA(H), CHETTIYAMKINAR, KLARI(PO),KOZHICHENA, MALAPPURAM,676501",
+    "dateofbirth": "14-08-2010",
+    "bloodgroup": "O+",
+    "phone": "7561856435",
+    "Password": "1108",
+    "Photo": "Photo/1108.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1108.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1108.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1108.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1108.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1108.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1108.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1108.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1108.pdf" }
+    ]
+  },
+
+  {
+    "id": 14,
+    "Username": "Shaz",
+    "adno": "1109",
+    "Name": "Shaz Adul Sammed NV",
+    "Guardian": "Abdul Sammed Nv",
+    "address": "NECHIKKATTUVADUTHALA(H), PULPARAMB,OZHUR(PO),THEYYALA,MALAPPURAM,676307",
+    "dateofbirth": "17-08-2010",
+    "bloodgroup": "A+",
+    "phone": "7994068212",
+    "Password": "1109",
+    "Photo": "Photo/1109.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1109.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1109.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1109.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1109.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1109.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1109.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1109.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1109.pdf" }
+    ]
+  },
+
+  {
+    "id": 15,
+    "Username": "Mishkath",
+    "adno": "1110",
+    "Name": "Ahmed Khirash Mishkath M",
+    "Guardian": "Muneer M",
+    "address": "MARUTHIL(H), KUTTALOOR, O.K MURI (PO), VENGARA, MALAPPURAM, 676519",
+    "dateofbirth": "10-05-2011",
+    "bloodgroup": "A+",
+    "phone": "9847530595",
+    "Password": "1110",
+    "Photo": "Photo/1110.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1110.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1110.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1110.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1110.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1110.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1110.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1110.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1110.pdf" }
+    ]
+  },
+
+  {
+    "id": 16,
+    "Username": "Adhnan",
+    "adno": "1112",
+    "Name": "Muhammed Adhnan KV",
+    "Guardian": "Abdul Nasar KV",
+    "address": "KANNIYATHVEETIL(H), TRIPPANACHI, PALAKKAD(PO), MANJERI, MALAPPURAM,673604",
+    "dateofbirth": "12-07-2010",
+    "bloodgroup": "B+",
+    "phone": "9744212659",
+    "Password": "1112",
+    "Photo": "Photo/1112.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1132.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1132.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1132.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1132.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1132.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1112.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1112.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1112.pdf" }
+    ]
+  },
+
+  {
+    "id": 17,
+    "Username": "Shihab",
+    "adno": "1113",
+    "Name": "Muhammadaly Shihab",
+    "Guardian": "Abu Thahir TP",
+    "address": "THEKKUMPURAM(H), MANNARKAD, THENKARA(PO), MANNARKAD, PALAKKAD, 678582",
+    "dateofbirth": "22-09-2010",
+    "bloodgroup": "A+",
+    "phone": "8156947070",
+    "Password": "1113",
+    "Photo": "Photo/1113.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1113.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1113.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1113.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1113.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1113.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1113.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1113.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1113.pdf" }
+    ]
+  },
+
+  {
+    "id": 18,
+    "Username": "Sabith",
+    "adno": "1114",
+    "Name": "Muhammed Sabith U",
+    "Guardian": "Shamsheed U",
+    "address": "KARIYATHAN KUZHI(H), KARIYATHAN KUZHI, CHERUVAYOOR (PO), EDAVANNAPARA, MALAPPURAM,673645",
+    "dateofbirth": "21-12-2010",
+    "bloodgroup": "A+",
+    "phone": "8943535816",
+    "Password": "1114",
+    "Photo": "Photo/1114.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1114.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1114.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1114.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1114.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1114.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1114.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1114.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1114.pdf" }
+    ]
+  },
+
+  {
+    "id": 19,
+    "Username": "Najmudheen",
+    "adno": "1115",
+    "Name": "Najmudheen K",
+    "Guardian": "Hamza K",
+    "address": "KALODI(H), PULIKKOD, KOTTAKKAL(PO), KOTTAKKAL, MALAPPURAM,676503",
+    "dateofbirth": "08-09-2010",
+    "bloodgroup": "O-",
+    "phone": "8129367949",
+    "Password": "1115",
+    "Photo": "Photo/1115.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1115.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1115.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1115.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1115.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1115.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1115.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1115.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1115.pdf" }
+    ]
+  },
+
+  {
+    "id": 20,
+    "Username": "Naseem",
+    "adno": "1117",
+    "Name": "Muhammed Naseem P",
+    "Guardian": "Abdul Shukoor P",
+    "address": "PARAMBIL(H),CHEMMAD,THIRURANGADI(PO),CHEMMAD,MALAPPURAM,676306",
+    "dateofbirth": "07-08-2011",
+    "bloodgroup": "O+",
+    "phone": "9152786313",
+    "Password": "1117",
+    "Photo": "Photo/1117.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1117.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1117.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1117.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1117.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1117.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1117.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1117.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1117.pdf" }
+    ]
+  },
+
+  {
+    "id": 21,
+    "Username": "Jouhar",
+    "adno": "1118",
+    "Name": "Umar-Ul Jouhar P",
+    "Guardian": "Zainul Ashiq P",
+    "address": "PUTHIYADATH(H),KODUMBATTUKUZHI,PERUVAYAL(PO),MAVOOR,KOZHIKODE,673008",
+    "dateofbirth": "11-02-2011",
+    "bloodgroup": "O+",
+    "phone": "7591901703",
+    "Password": "1118",
+    "Photo": "Photo/1118.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1118.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1118.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1118.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1118.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1118.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1118.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1118.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1118.pdf" }
+    ]
+  },
+
+  {
+    "id": 22,
+    "Username": "Nihal",
+    "adno": "1120",
+    "Name": "Muhammed Nihal KK",
+    "Guardian": "Mohammed Ummer KK",
+    "address": "KUZHI KKANDAN(H),KARUVANCHERY PARAMB, IRUMBOZHI(PO),MALAPPURAM, 676509",
+    "dateofbirth": "16-06-2011",
+    "bloodgroup": "AB+",
+    "phone": "9633747850",
+    "Password": "1120",
+    "Photo": "Photo/1120.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1120.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1120.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1120.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1120.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1120.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1120.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1120.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1120.pdf" }
+    ]
+  },
+
+  {
+    "id": 23,
+    "Username": "Nawaf",
+    "adno": "1121",
+    "Name": "Muhammed Nawaf M",
+    "Guardian": "Jafar M",
+    "address": "MARATHODI(H), KURUVA, MAKKARAPPARAMB(PO), MALAPPURAM,676517 ",
+    "dateofbirth": "13-10-2010",
+    "bloodgroup": "A+",
+    "phone": "8547119277",
+    "Password": "1121",
+    "Photo": "Photo/1121.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1121.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1121.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1121.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1121.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1121.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1121.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1121.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1121.pdf" }
+    ]
+  },
+
+  {
+    "id": 24,
+    "Username": "Amal Hayyan",
+    "adno": "1123",
+    "Name": "Amal Hayyan Chokly",
+    "Guardian": "Faisal Chockly",
+    "address": "KOZHICHEETIL(H), PALAKKAL, VELIMUKKU SOUTH (PO), MALAPPURAM,676317",
+    "dateofbirth": "19-02-2011",
+    "bloodgroup": "B+",
+    "phone": "9072201649",
+    "Password": "1123",
+    "Photo": "Photo/1123.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1123.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1123.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1123.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1123.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1123.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1123.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1123.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1123.pdf" }
+    ]
+  },
+
+  {
+    "id": 25,
+    "Username": "Shifin",
+    "adno": "1125",
+    "Name": "Muhammed Shifin C",
+    "Guardian": "Ishaq C",
+    "address": "CHALIL-CHUVANNA PARAMBIL(H),VADAKKUMURI,IRUMBUZHI(PO),IRUMBUZHI,MALAPPURAM,676513",
+    "dateofbirth": "01-07-2011",
+    "bloodgroup": "O+",
+    "phone": "9061708184",
+    "Password": "1125",
+    "Photo": "Photo/1125.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1125.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1125.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1125.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1125.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1125.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1125.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1125.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1125.pdf" }
+    ]
+  },
+
+  {
+    "id": 26,
+    "Username": "Hadi",
+    "adno": "1126",
+    "Name": "Muhammed Hadi PC",
+    "Guardian": "Abdussamad PC",
+    "address": " PERINKADAKKATH CHETTIARIL(H), CHETTIYARAMAD, CHETTIYARAMAD(PO), CALICUT UNIVERSITY,MALAPPURAM,676635",
+    "dateofbirth": "9526503361",
+    "bloodgroup": "A+",
+    "phone": "9526503361",
+    "Password": "1126",
+    "Photo": "Photo/1126.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1126.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1126.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1126.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1126.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1126.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1126.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1126.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1126.pdf" }
+    ]
+  },
+
+  {
+    "id": 27,
+    "Username": "Anshif",
+    "adno": "1127",
+    "Name": "Muhammed Anshif K",
+    "Guardian": "Abdul Azeez K",
+    "address": "KADAMBOT(H), VALIYAD, KODUR EAST (PO), MALAPPURAM,676504",
+    "dateofbirth": "19-05-2011",
+    "bloodgroup": "A+",
+    "phone": "7034860549",
+    "Password": "1127",
+    "Photo": "Photo/1127.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1127.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1127.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1127.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1127.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1127.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1127.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1127.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1127.pdf" }
+    ]
+  },
+
+  {
+    "id": 28,
+    "Username": "Sahal",
+    "adno": "1128",
+    "Name": "Muhammed Sahal PK",
+    "Guardian": "Kunhimoideen Kutti PK",
+    "address": "PARUTHIKKUNNAN(H),KOTTANTHALA,ULLANAM(PO),PATHINGAL,MALAPPURAM,676303",
+    "dateofbirth": "14-03-2011",
+    "bloodgroup": "O+",
+    "phone": "9747706611",
+    "Password": "1128",
+    "Photo": "Photo/1128.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1128.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1128.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1128.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1128.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1128.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1128.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1128.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1128.pdf" }
+    ]
+  },
+
+  {
+    "id": 29,
+    "Username": "Zayan",
+    "adno": "1129",
+    "Name": "Muhammed Zayan M",
+    "Guardian": "Rafeeq M",
+    "address": "MELAYIL(H), CHETTIPPURAMADU,VALIYORA(PO), VENGARA, MALAPPURAM, 676304",
+    "dateofbirth": "17-09-2011",
+    "bloodgroup": "A+",
+    "phone": "9605282915",
+    "Password": "1129",
+    "Photo": "Photo/1129.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1129.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1129.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1129.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1129.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1129.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1129.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1129.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1129.pdf" }
+    ]
+  },
+
+  {
+    "id": 30,
+    "Username": "Rishan",
+    "adno": "1130",
+    "Name": "Muhammed Rishan P",
+    "Guardian": "Rasheed P",
+    "address": "PARIYARATH(H), KUTTIPURAM, KUTTIPURAM(PO), KOTTAKKAL,MALAPPURAM, 676503",
+    "dateofbirth": "20-9-2011",
+    "bloodgroup": "A+",
+    "phone": "8089336701",
+    "Password": "1130",
+    "Photo": "Photo/1130.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1130.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1130.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1130.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1130.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1130.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1130.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1130.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1130.pdf" }
+    ]
+  },
+
+  {
+    "id": 31,
+    "Username": "Nihal M",
+    "adno": "1170",
+    "Name": "Muhammed Nihal M",
+    "Guardian": "Abdul Latheef M",
+    "address": "MUZHIKKAL(H), PUTHANANGADI,VALIYORA(PO),VENGARA, MALAPPURAM, 676304",
+    "dateofbirth": "12-11-2011",
+    "bloodgroup": "O+",
+    "phone": "9961735547",
+    "Password": "1170",
+    "Photo": "Photo/1170.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1170.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1170.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1170.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1170.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1170.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1170.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1170.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1170.pdf" }
+    ]
+  },
+
+  {
+    "id": 32,
+    "Username": "Hamid",
+    "adno": "1171",
+    "Name": "Abdullah Hamid KK",
+    "Guardian": "Noorudheen Hudawi KK",
+    "address": "Kunnakkadan House, Kooriyad. Indianoor Post",
+    "dateofbirth": "18-06-2011",
+    "bloodgroup": "",
+    "phone": "9809954862",
+    "Password": "1171",
+    "Photo": "Photo/1171.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1171.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1171.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1171.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1171.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1171.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1171.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1171.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1171.pdf" }
+    ]
+  },
+
+  {
+    "id": 33,
+    "Username": "Nihal PT",
+    "adno": "1176",
+    "Name": "Muhammed Nihal PT",
+    "Guardian": "Father",
+    "address": "",
+    "dateofbirth": "",
+    "bloodgroup": "",
+    "phone": "",
+    "Password": "1176",
+    "Photo": "Photo/1176.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1176.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1176.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1176.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1176.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1176.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1176.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1176.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1176.pdf" }
+    ]
+  },
+
+  {
+    "id": 34,
+    "Username": "Sahal P",
+    "adno": "1083",
+    "Name": "Muhammed Sahal P",
+    "Guardian": "Sakeer Hussain P",
+    "address": "PALLIYATH (H), ATTUPURAM, RANDATHANI(PO), KOTTAKKAL, MALAPPURAM, 676510",
+    "dateofbirth": "03-06-2010",
+    "bloodgroup": "A+",
+    "phone": "9061834533",
+    "Password": "1083",
+    "Photo": "Photo/1083.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1083.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1083.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1083.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1083.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1083.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1083.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1083.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1083.pdf" }
+    ]
+  },
+
+  {
+    "id": 35,
+    "Username": "Rabeeh",
+    "adno": "1080",
+    "Name": "Muhammed Rabeeh A",
+    "Guardian": "Abdul Majeed A",
+    "address": "AREEKATH (H), KALAMBADI, MALAPPURAM(PO), MALAPPURAM, 676505",
+    "dateofbirth": "09-07-2009",
+    "bloodgroup": "A+",
+    "phone": "9947894331",
+    "Password": "1080",
+    "Photo": "Photo/1080.jpg",
+    "Documents": [
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2022-2023", "pdf": "Exam/H 2022-23/1080.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2022-2023", "pdf": "Exam/2022-23/1080.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2023-2024", "pdf": "Exam/H 2023-24/1080.pdf" },
+      { "title": "EXAM RESULTS", "description": "Annual year Examination 2023-2024", "pdf": "Exam/2023-24/1080.pdf" },
+      { "title": "EXAM RESULTS", "description": "Half Yearly Examination 2024-2025", "pdf": "Exam/H 2024-25/1080.pdf" }
+    ],
+    "ArtsFest": [
+      { "title": "AL KARAMA'24", "description": "Results of AL KARAMA'24", "pdf": "Arts Fest/AL-KARAMA/1080.pdf" },
+      { "title": "RASTAKHIZ'24", "description": "Results of RASTAKHIZ'24", "pdf": "Arts Fest/RASTAKHIZ/1080.pdf" },
+      { "title": "ARPANET'23", "description": "Results of ARPANET'23", "pdf": "Arts Fest/ARPANET/1080.pdf" }
+    ]
+  }
+  
+]

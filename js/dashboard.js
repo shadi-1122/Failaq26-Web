@@ -34,7 +34,7 @@ if (loggedInUser) {
         userPhoto.src = 'photo/Unknown.png'; // Use default photo
     }
 } else {
-    window.location.href = 'index.html'; // Redirect to login if not logged in
+    window.location.href = 'https://failaq-users.vercel.app/'; // Redirect to login if not logged in
 }
 
 // Sidebar navigation logic
@@ -60,7 +60,7 @@ links.forEach(link => {
 // Logout functionality
 document.getElementById('logout-btn').addEventListener('click', () => {
     localStorage.clear(); // Clear session
-    window.location.href = 'index.html'; // Redirect to login
+    window.location.href = 'https://failaq-users.vercel.app/'; // Redirect to login
 });
 
 // Load Documents and Arts Fest data

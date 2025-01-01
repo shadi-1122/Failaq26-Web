@@ -124,3 +124,6 @@ function viewArtsFestDocument(pdfUrl) {
 function reload(){
     location.reload();
 }
+
+const d = new Date();
+document.getElementById('year').innerHtml = d.getFullYear();

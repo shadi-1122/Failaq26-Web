@@ -126,4 +126,4 @@ function reload(){
 }
 
 const d = new Date();
-document.getElementById('year').innerHtml = d.getFullYear();
+document.getElementById("year").innerHTML = d.getFullYear();

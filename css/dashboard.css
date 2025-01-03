@@ -404,7 +404,7 @@ position: relative;
     }
    
 
-    .result-section {
+        .result-section {
         display: block;
         margin-top: 20px;
         border-radius: 10px;
@@ -491,7 +491,6 @@ position: relative;
         align-items: center;
         justify-content: center;
     }
-
    
 
     @media screen and (max-width:430px) {

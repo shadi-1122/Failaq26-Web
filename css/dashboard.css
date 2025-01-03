@@ -423,7 +423,7 @@ position: relative;
     }
     
     .error-message {
-        color: red;
+        color: #dddddd;
         margin-top: 10px;
         font-size: 14px;
     }

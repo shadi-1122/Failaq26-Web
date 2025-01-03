@@ -163,9 +163,11 @@ let studentsData = [];
             if (student) {
                 document.getElementById('error-message').textContent = '';  // Clear error message
                 displayStudentData(student);
+                document.getElementById('result-section').style.display = "block"
             } else {
                 document.getElementById('error-message').textContent = 'Student not found';
                 document.getElementById('student-details').innerHTML = '';  // Clear previous data
+                document.getElementById('result-section').style.display = "none"
             }
         }
 

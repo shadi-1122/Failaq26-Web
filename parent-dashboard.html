@@ -23,10 +23,11 @@
         <h2>Dashboard</h2>
         <ul class="menu">
             <li><a href="#" id="home-link">Home</a></li>
+            <li><a href="#" id="Updates-link">Updates</a></li>
             <li><a href="#" id="profile-link">Profile</a></li>
             <li><a href="#" id="documents-link">Examination</a></li>
-            <li><a href="#" id="arts-fest-link">Arts Fest</a></li> <!-- New Arts Fest Tab -->
-            <li><a href="#" id="Updates-link">Updates</a></li>
+            <li><a href="#" id="arts-fest-link">Arts Fest</a></li>
+            <li><a href="#" id="monthly-link">Monthly Fund</a></li>
             <li><a href="#" id="gallery-link">Gallery</a></li>
         </ul>
     </div>
@@ -64,7 +65,7 @@
                 <div class="card">
                     <h3>Monthly Fund</h3>
                     <p>Check Monthly Fund details</p>
-                    <button onclick="window.open('https://docs.google.com/spreadsheets/d/1vmOYukPicI9Ob6FhsZKUnOHqxmk8urXezGeUUv83V9U/edit?gid=0#gid=0')">View</button>
+                    <button onclick="document.getElementById('monthly-link').click()">View</button>
                 </div>
                 <div class="card">
                     <h3>Gallery</h3>
@@ -113,6 +114,21 @@
             <h2>Arts Fest</h2>
             <div id="arts-fest-list" class="cards-section"></div>
         </div>
+
+        <div id="monthly" class="page">
+            <h2>Monthly Fund</h2>
+            <div class="flex">
+                <div id="monthly-list" class="cards-section">
+                    <label for="adno">Enter ADNO: </label>
+                    <input type="text" id="adno" placeholder="Enter Admission Number">
+                    <button onclick="searchStudent()">Search</button>
+                    <p id="error-message" class="error-message"></p>
+                </div>
+            </div>
+            <div class="result-section" id="result-section">
+                <div id="student-details" class="table-container"></div>
+            </div>
+        </div> 
 
         <div id="Updates" class="page">
             <h2>Updates</h2>

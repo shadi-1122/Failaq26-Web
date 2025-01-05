@@ -111,7 +111,7 @@ position: relative;
 }
 
 .sidebar a.active {
-    background-color: var(--hover-dark);
+    background-color: var(--main-color);
 }
 
 .sidebar .menu {
@@ -135,10 +135,6 @@ position: relative;
     }
     
     .sidebar .menu a:hover {
-        background-color: var(--hover-dark);
-    }
-
-    .sidebar .menu a.active {
         background-color: var(--hover-dark);
     }
     
@@ -227,6 +223,7 @@ position: relative;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         gap: 30px;
     }
 
@@ -256,6 +253,7 @@ position: relative;
         text-align: center;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
         width: auto;
+        height: auto;
     }
     
     .card:hover {
@@ -289,6 +287,66 @@ position: relative;
     .card button:hover {
         background-color: var(--hover-dark);
         
+    }
+
+    .spcards-section{
+        display: none;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+
+    .spcl-card{
+        background-color: var(--light-color);
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        width: 200px;
+        margin:0 auto;
+    }
+
+    .spcl-card img{
+        border-radius: 50%;
+        width: 115px;
+        height: 115px;
+    }
+
+    .spcl-card:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .spcl-card h3{
+        margin: 0 0 10px;
+        font-size: 18px;
+        color: var(--dark-color);
+    }
+
+    .spcl-card h2{
+        margin: 0 0 10px;
+        font-size: 40px;
+    }
+
+    .spcl-card p{
+        font-size: 14px;
+        color: var(--dark-color);
+        margin: 5px 0;
+    }
+
+    .spcl-card button{
+        background-color: var(--dark-color);
+        color: #ffffff;
+        border: none;
+        padding: 10px 15px;
+        margin-top: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .spcl-card button:hover{
+        background-color: var(--hover-dark);
     }
     
     
@@ -406,9 +464,8 @@ position: relative;
         text-decoration: none;
         color: white;
     }
-   
 
-        .result-section {
+    .result-section {
         display: none;
         margin-top: 20px;
         border-radius: 10px;
@@ -483,8 +540,8 @@ position: relative;
     }
 
     .srch{
-        width: 165px;
-        height: 30%;
+        width: 200px;
+        height: 100%;
         padding: 8px;
         background-color: #8b4121;
         color: white;
@@ -495,6 +552,9 @@ position: relative;
         align-items: center;
         justify-content: center;
     }
+
+
+
    
 
     @media screen and (max-width:430px) {
@@ -502,6 +562,12 @@ position: relative;
             display: grid;
             grid-template-columns:auto;
             gap: 20px;   
+         }
+
+         .spcards-section{
+            display: grid;
+            grid-template-columns:auto;
+            gap: 20px;  
          }
 
         header{

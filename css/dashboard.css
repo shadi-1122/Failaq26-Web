@@ -187,9 +187,113 @@ position: relative;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
         align-items: center;
         justify-content: center;
-        margin-top: 5px;
+        margin-top: 0;
         color: var(--light-color);
+    }
 
+    .pie{
+        width: 110px;
+        height: 110px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .otr{
+        height: 1px;
+        width: 1px;
+        border-radius: 50%;
+        padding: 11px;
+        box-sizing: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                    -6px -6px 10px -1px rgba(225,225,225,0.7);
+    }
+
+    .otr1{
+        height: 1px;
+        width: 1px;
+        border-radius: 50%;
+        padding: 13px;
+        box-sizing: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                    -6px -6px 10px -1px rgba(225,225,225,0.7);
+    }
+
+    .inner{
+        height: 80px;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                    inset -4px -4px 6px -1px rgba(225,225,225,0.7),
+                    -0.5px -0.5px 0px rgba(225,225,225,1),
+                    0.5px 0.5px 0px rgba(0,0,0,0.15),
+                    0px 12px 10px -10px rgba(0,0,0,0.5);
+    }
+
+    #number1{
+        font-weight: 620px;
+        color: #555;
+    }
+
+    #number2{
+        font-weight: 600px;
+        color: #555;
+    }
+
+    #number3{
+        font-weight: 600px;
+        color: #555;
+    }
+
+    .circle{
+        fill: none;
+        stroke: var(--dark-color);
+        stroke-width: 6px;
+        stroke-dasharray: 270;
+        stroke-dashoffset: 270;
+        animation: anim 2s linear forwards;
+    }
+
+    .circle1{
+        fill: none;
+        stroke: var(--dark-color);
+        stroke-width: 4px;
+        stroke-dasharray: 270;
+        stroke-dashoffset: 270;
+        animation: anim1 2s linear forwards;
+    }
+
+    .circle2{
+        fill: none;
+        stroke: var(--dark-color);
+        stroke-width: 4px;
+        stroke-dasharray: 270;
+        stroke-dashoffset: 270;
+        animation: anim2 2s linear forwards;
+    }
+
+    svg{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    @keyframes anim{
+        100%{
+            stroke-dashoffset: 30;
+        }
+    }
+
+    @keyframes anim1{
+        100%{
+            stroke-dashoffset: 30;
+        }
+    }
+
+    @keyframes anim2{
+        100%{
+            stroke-dashoffset: 34;
+        }
     }
     
     strong{
@@ -231,12 +335,6 @@ position: relative;
         width: 300px;
     }
 
-    hr{
-        transform: rotate(0deg);
-        border: 0.5px solid rgba(255, 255, 255, 0.452);
-        padding: 0;
-        margin: 0;
-    }
 
     .cards-section {
         display: grid;
@@ -290,14 +388,44 @@ position: relative;
     }
 
     .spcards-section{
-        display: none;
+        display: grid;
         grid-template-columns: auto auto auto;
-        gap: 20px;
+        grid-template-rows: auto auto auto;
+        gap: -5px;
     }
 
     .spcl-card{
         background-color: var(--light-color);
         padding: 15px;
+        padding-top: 18px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        width: 200px;
+        margin:0 auto;
+        margin-top: 39px;
+        margin-left: 10px;
+    }
+
+    .spcl-card1{
+        background-color: var(--light-color);
+        padding: 15px;
+        padding-top: 18px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        width: 200px;
+        margin:0 auto;
+        margin-top: 39px;
+        margin-right: 10px;
+    }
+
+    .spcl-card2{
+        background-color: var(--light-color);
+        padding: 15px;
+        padding-top: 35px;
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         text-align: center;
@@ -310,6 +438,7 @@ position: relative;
         border-radius: 50%;
         width: 115px;
         height: 115px;
+        border: 1.5px solid var(--dark-color);
     }
 
     .spcl-card:hover{
@@ -319,19 +448,38 @@ position: relative;
 
     .spcl-card h3{
         margin: 0 0 10px;
-        font-size: 18px;
+        font-size: 20px;
         color: var(--dark-color);
     }
 
-    .spcl-card h2{
+    .spcl-card h4{
         margin: 0 0 10px;
-        font-size: 40px;
+        font-size: 22px;
+        color: var(--dark-color);
+    }
+
+    .spcl-card hr{
+        border-left: 1px solid var(--dark-color);
+        height: 15px;
+        width: 0;
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .spcl-card h2{
+        margin: 0 0 1px;
+        font-size: 35px;
+        color: var(--dark-color);
     }
 
     .spcl-card p{
         font-size: 14px;
         color: var(--dark-color);
         margin: 5px 0;
+        margin-top: 1px;
     }
 
     .spcl-card button{
@@ -348,6 +496,145 @@ position: relative;
     .spcl-card button:hover{
         background-color: var(--hover-dark);
     }
+
+    .spcl-card1 img{
+        border-radius: 50%;
+        width: 115px;
+        height: 115px;
+        border: 1.5px solid var(--dark-color);
+    }
+
+    .spcl-card1:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .spcl-card1 h3{
+        margin: 0 0 10px;
+        font-size: 20px;
+        color: var(--dark-color);
+    }
+
+    .spcl-card1 h4{
+        margin: 0 0 10px;
+        font-size: 22px;
+        color: var(--dark-color);
+    }
+
+    .spcl-card1 hr{
+        border-left: 1px solid var(--dark-color);
+        height: 15px;
+        width: 0;
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .spcl-card1 h2{
+        margin: 0 0 1px;
+        font-size: 35px;
+        color: var(--dark-color);
+    }
+
+    .spcl-card1 p{
+        font-size: 14px;
+        color: var(--dark-color);
+        margin: 5px 0;
+        margin-top: 1px;
+    }
+
+    .spcl-card1 button{
+        background-color: var(--dark-color);
+        color: #ffffff;
+        border: none;
+        padding: 10px 15px;
+        margin-top: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .spcl-card1 button:hover{
+        background-color: var(--hover-dark);
+    }
+
+    .spcl-cardc{
+        background-color: var(--light-color);
+        padding: 25px;
+        padding-top: 18px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        width: 200px;
+        margin:0 auto;
+    }
+
+    .spcl-cardc img{
+        border-radius: 50%;
+        width: 117px;
+        height: 117px;
+        border: 1.5px solid var(--dark-color);
+    }
+
+    .spcl-cardc:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .spcl-cardc h3{
+        margin: 0 0 10px;
+        font-size: 22px;
+        color: var(--dark-color);
+    }
+
+    .spcl-cardc h4{
+        margin: 0 0 10px;
+        font-size: 24px;
+        color: var(--dark-color);
+    }
+
+    .spcl-cardc hr{
+        border-left: 1px solid var(--dark-color);
+        height: 15px;
+        width: 0;
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .spcl-cardc h2{
+        margin: 0 0 1px;
+        font-size: 37px;
+        color: var(--dark-color);
+    }
+
+    .spcl-cardc p{
+        font-size: 16px;
+        color: var(--dark-color);
+        margin: 5px 0;
+        margin-top: 1px;
+    }
+
+    .spcl-cardc button{
+        background-color: var(--dark-color);
+        color: #ffffff;
+        border: none;
+        padding: 10px 15px;
+        margin-top: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .spcl-cardc button:hover{
+        background-color: var(--hover-dark);
+    }
+
     
     
     footer {

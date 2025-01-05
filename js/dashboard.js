@@ -1,4 +1,4 @@
-// Sidebar toggle functionality
+
 function toggleMenu() {
     const sidebar = document.getElementById('sidebar');
     const overlay = document.getElementById('overlay');
@@ -6,18 +6,18 @@ function toggleMenu() {
     overlay.classList.toggle('active');
 }
 
-// Close menu when clicking outside
+
 function closeMenu() {
     document.getElementById('sidebar').classList.remove('active');
     document.getElementById('overlay').classList.remove('active');
 }
 
-// Load the user data from localStorage
+
 const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 
-// Ensure user data is displayed
+
 if (loggedInUser) {
-    // Display user data
+    
     document.getElementById('user-Name').textContent = loggedInUser.Username;
     document.getElementById('user-email').textContent = loggedInUser.adno;
     document.getElementById('user-Guardian').textContent = loggedInUser.Guardian;
@@ -26,18 +26,18 @@ if (loggedInUser) {
     document.getElementById('user-bloodgroup').textContent = loggedInUser.bloodgroup;
     document.getElementById('user-phone').textContent = loggedInUser.phone;
 
-    // Handle user photo
+    
     const userPhoto = document.getElementById('user-photo');
     if (loggedInUser.Photo && loggedInUser.Photo.trim() !== '') {
-        userPhoto.src = loggedInUser.Photo; // Use user's photo
+        userPhoto.src = loggedInUser.Photo; 
     } else {
-        userPhoto.src = 'photo/Unknown.png'; // Use default photo
+        userPhoto.src = 'photo/Unknown.png'; 
     }
 } else {
-    window.location.href = 'https://failaq-users.vercel.app/'; // Redirect to login if not logged in
+    window.location.href = 'index.html'; 
 }
 
-// Sidebar navigation logic
+
 const links = document.querySelectorAll('.menu a');
 const pages = document.querySelectorAll('.page');
 
@@ -45,27 +45,27 @@ links.forEach(link => {
     link.addEventListener('click', function (e) {
         e.preventDefault();
 
-        // Hide all pages
+        
         pages.forEach(page => page.classList.remove('active'));
-
-        // Show the clicked page
+        
+        
         const targetId = link.id.replace('-link', '');
         document.getElementById(targetId).classList.add('active');
 
-        // Close the menu after navigation
+        
         closeMenu();
     });
 });
 
-// Logout functionality
+
 document.getElementById('logout-btn').addEventListener('click', () => {
-    localStorage.clear(); // Clear session
-    window.location.href = 'https://failaq-users.vercel.app/'; // Redirect to login
+    localStorage.clear(); 
+    window.location.href = 'index.html'; 
 });
 
-// Load Documents and Arts Fest data
+
 fetch('users.json')
-    .then(response => response.json())
+.then(response => response.json())
     .then(users => {
         const currentUser = users.find(user => user.Username === loggedInUser.Username);
         if (currentUser) {
@@ -79,9 +79,9 @@ fetch('users.json')
     })
     .catch(error => console.error('Error loading users:', error));
 
-// Function to load documents
-function loadDocuments(documents) {
-    const documentsList = document.getElementById('documents-list');
+
+    function loadDocuments(documents) {
+        const documentsList = document.getElementById('documents-list');
     documents.forEach(doc => {
         const card = document.createElement('div');
         card.classList.add('card');
@@ -94,15 +94,15 @@ function loadDocuments(documents) {
     });
 }
 
-// Function to view a document
+
 function viewDocument(pdfUrl) {
     window.open(pdfUrl, '_blank');
 }
 
-// Function to load Arts Fest documents
-function loadArtsFest(artsFestDocuments) {
-    const artsFestList = document.getElementById('arts-fest-list'); // Make sure this element exists in your HTML
 
+function loadArtsFest(artsFestDocuments) {
+    const artsFestList = document.getElementById('arts-fest-list'); 
+    
     artsFestDocuments.forEach(doc => {
         const card = document.createElement('div');
         card.classList.add('card');
@@ -115,7 +115,7 @@ function loadArtsFest(artsFestDocuments) {
     });
 }
 
-// Function to view an Arts Fest document
+
 function viewArtsFestDocument(pdfUrl) {
     window.open(pdfUrl, '_blank');
 }
@@ -143,40 +143,41 @@ let studentsData = [];
             console.log("Headers:", headers); 
 
             studentsData = rows.slice(1).map(row => {
-                const columns = row.split(',').map(col => col.trim());  // Trim spaces from each column value
+                const columns = row.split(',').map(col => col.trim());  
                 const student = {};
                 columns.forEach((col, index) => {
-                    // Ensure headers are trimmed to avoid issues with extra spaces
+                    
                     student[headers[index]] = col;
                 });
                 return student;
             });
 
-            console.log("Students Data:", studentsData);  // Log the student data to confirm
+            console.log("Students Data:", studentsData);  
         }
-
-        // Search for the student by ADNO and display the data
+        
+        
         function searchStudent() {
             const adno = document.getElementById('adno').value.trim();
+            const addno = document.getElementById('adno');
             const student = studentsData.find(s => s.ADNO === adno);
 
             if (student) {
-                document.getElementById('error-message').textContent = '';  // Clear error message
+                document.getElementById('error-message').textContent = '';  
                 displayStudentData(student);
                 document.getElementById('result-section').style.display = "block"
             } else {
                 document.getElementById('error-message').textContent = 'Student not found';
-                document.getElementById('student-details').innerHTML = '';  // Clear previous data
+                document.getElementById('student-details').innerHTML = '';  
                 document.getElementById('result-section').style.display = "none"
             }
         }
 
-        // Display the student's data in vertical table format
+        
         function displayStudentData(student) {
             const container = document.getElementById('student-details');
-            container.innerHTML = ''; // Clear any previous content
-
-            // Extract the months' data and calculate total
+            container.innerHTML = ''; 
+            
+            
             const months = [
                 'JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 
                 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'
@@ -184,9 +185,9 @@ let studentsData = [];
 
             let total = 0;
 
-            // Start building the table in a vertical format
+            
             let tableHTML = `
-                <table class="result-table">
+            <table class="result-table">
                     <thead>
                         <tr>
                             <th>Month</th>
@@ -196,21 +197,21 @@ let studentsData = [];
                     <tbody>
             `;
 
-            // Loop through each month and add the fee data in vertical rows
+            
             months.forEach(month => {
-                const monthValue = parseInt(student[month]) || 0;  // Parse as number or set to 0 if invalid
-                total += monthValue;  // Add to total
+                const monthValue = parseInt(student[month]) || 0;  
+                total += monthValue;  
                 tableHTML += `
-                    <tr>
+                <tr>
                         <td>${month}</td>
                         <td>${monthValue}</td>
                     </tr>
                 `;
             });
 
-            // Add total row to the table
+            
             tableHTML += `
-                    <tr class="total-column">
+            <tr class="total-column">
                         <td><strong>Total</strong></td>
                         <td><strong>${total}</strong></td>
                     </tr>
@@ -218,6 +219,85 @@ let studentsData = [];
             </table>
             `;
 
-            // Append the table to the container
+            
             container.innerHTML = tableHTML;
         }
+
+        let number = document.getElementById('number1');
+        let targetElement5 = document.getElementById('number1')
+        let counter = 0;
+        let targetValue5 = parseInt(targetElement5.innerHTML, 10)
+        let intervalId5 = setInterval(() => {
+            if(counter >=targetValue5){
+                clearInterval(intervalId5);
+            }else{
+                counter += 1;
+                number.innerHTML = counter + "%"
+            }
+        }, 21.5);
+
+        let mark = document.getElementById('mark1');
+        let targetElement4 = document.getElementById('mark1')
+        let count = 0;
+        let targetValue4 = parseInt(targetElement4.innerHTML, 10)
+        let intervalId4 = setInterval(()=>{
+            if(count >=targetValue4){
+                clearInterval(intervalId4);
+            }else{
+                count += 3;
+                mark.innerHTML = count 
+            }
+        },3)
+
+
+        let number1 = document.getElementById('number2');
+        let targetElement3 = document.getElementById('number2');
+        let counter1 = 0;
+        let targetValue3 = parseInt(targetElement3.innerHTML, 10)
+        let intervalId3 = setInterval(() => {
+            if(counter1 >=targetValue3){
+                clearInterval(intervalId3);
+            }else{
+                counter1 += 1;
+                number1.innerHTML = counter1 + "%"
+            }
+        }, 21.5);
+
+        let mark1 = document.getElementById('mark2');
+        let targetElement2 = document.getElementById('mark2')
+        let count1 = 0;
+        let targetValue2 = parseInt(targetElement2.innerHTML, 10)
+        let intervalId2 = setInterval(()=>{
+            if(count1 >=targetValue2){
+                clearInterval(intervalId2);
+            }else{
+                count1 += 4;
+                mark1.innerHTML = count1 
+            }
+        },5)
+
+        let number2 = document.getElementById('number3');
+        let targetElement1 = document.getElementById('number3');
+        let counter2 = 0;
+        let targetValue1 = parseInt(targetElement1.innerHTML, 10)
+        let intervalId1 = setInterval(() => {
+            if(counter2 >=targetValue1){
+                clearInterval(intervalId1);
+            }else{
+                counter2 += 1;
+                number2.innerHTML = counter2 + "%"
+            }
+        }, 21.5);
+        
+        let mark2 = document.getElementById('mark3'); 
+        let targetElement = document.getElementById('mark3'); 
+        let count2 = 0;
+        let targetValue = parseInt(targetElement.innerHTML, 10);
+        let intervalId = setInterval(() => {
+            if (count2 >= targetValue) {
+                clearInterval(intervalId); 
+            } else {
+                count2 += 4;
+                mark2.innerHTML = count2;
+            }
+        }, 5);

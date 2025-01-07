@@ -26,15 +26,20 @@ if (loggedInUser) {
     document.getElementById('user-bloodgroup').textContent = loggedInUser.bloodgroup;
     document.getElementById('user-phone').textContent = loggedInUser.phone;
 
-    
+    const userPhot = document.getElementById('user-phot');
     const userPhoto = document.getElementById('user-photo');
+    if (loggedInUser.Photo && loggedInUser.Photo.trim() !== '') {
+        userPhot.src = loggedInUser.Photo; 
+    } else {
+        userPhot.src = 'photo/Unknown.png'; 
+    }
     if (loggedInUser.Photo && loggedInUser.Photo.trim() !== '') {
         userPhoto.src = loggedInUser.Photo; 
     } else {
         userPhoto.src = 'photo/Unknown.png'; 
     }
 } else {
-    window.location.href = 'index.html'; 
+    window.location.href = 'https://failaq-users.vercel.app'; 
 }
 
 
@@ -47,6 +52,9 @@ links.forEach(link => {
 
         
         pages.forEach(page => page.classList.remove('active'));
+        links.forEach(item => item.classList.remove('active'));
+
+        this.classList.add('active');
         
         
         const targetId = link.id.replace('-link', '');
@@ -56,6 +64,8 @@ links.forEach(link => {
         closeMenu();
     });
 });
+
+
 
 
 document.getElementById('logout-btn').addEventListener('click', () => {
@@ -301,3 +311,109 @@ let studentsData = [];
                 mark2.innerHTML = count2;
             }
         }, 5);
+
+        const track = document.querySelector('.carousel-track');
+        const items = Array.from(track.children);
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+
+        // Clone the first and last items for seamless transition
+        const firstClone = items[0].cloneNode(true);
+        const lastClone = items[items.length - 1].cloneNode(true);
+
+        track.appendChild(firstClone);
+        track.insertBefore(lastClone, items[0]);
+
+        const updatedItems = Array.from(track.children);
+        const totalItems = updatedItems.length;
+
+        let currentIndex = 1;
+        const itemWidth = items[0].getBoundingClientRect().width;
+
+        // Initial positioning
+        track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+
+        function updateCarousel() {
+            track.style.transition = 'transform 0.5s ease-in-out';
+            track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+        }
+
+        function checkLoop() {
+            if (currentIndex === 0) {
+                track.style.transition = 'none'; // Disable transition for seamless loop
+                currentIndex = items.length;
+                track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+            } else if (currentIndex === totalItems - 1) {
+                track.style.transition = 'none'; // Disable transition for seamless loop
+                currentIndex = 1;
+                track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+            }
+        }
+
+        nextButton.addEventListener('click', () => {
+            currentIndex++;
+            updateCarousel();
+            setTimeout(checkLoop, 500);
+        });
+
+        prevButton.addEventListener('click', () => {
+            currentIndex--;
+            updateCarousel();
+            setTimeout(checkLoop, 500);
+        });
+
+        // Auto-slide every 3 seconds
+        setInterval(() => {
+            currentIndex++;
+            updateCarousel();
+            setTimeout(checkLoop, 500);
+        }, 3000);
+
+        window.addEventListener('resize', () => {
+            track.style.transition = 'none';
+            track.style.transform = `translateX(-${currentIndex * items[0].getBoundingClientRect().width}px)`;
+        });
+
+        
+
+        const sibaq = document.getElementById('sibaq');
+        const sbq = document.getElementById('sbq')
+
+        if(window.innerWidth<=530){
+            sibaq.style.display = 'block'
+            sbq.style.display = 'block'
+        }else{
+            sibaq.style.display = 'none'
+            sbq.style.display = 'none'
+        }
+
+        const menuIcon = document.getElementById('user-phot');
+        const menu = document.getElementById('small');
+        const ovrl = document.getElementById('ovrl');
+        const sml = document.getElementById('sml');
+        const prf = document.getElementById('profile-link');
+        const svpr = document.getElementById('svpr')
+        function imgT(){
+            menu.classList.toggle('active');
+            ovrl.classList.toggle('active');
+            menuIcon.style.border = "1px solid #8a3324";
+            if(prf.classList.contains('active')){
+                sml.classList.add('active')
+            }else{
+                sml.classList.remove('active')
+            }
+
+            if(sml.classList.contains('active')){
+                svpr.classList.add('active')
+            }else{
+                svpr.classList.remove('active')
+            }
+        }
+
+
+        function imgC(){
+            document.getElementById('small').classList.remove('active')
+            document.getElementById('ovrl').classList.remove('active')
+        }
+
+

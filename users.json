@@ -9,7 +9,7 @@
     "dateofbirth": "12-04-2011",
     "bloodgroup": "A+",
     "phone": 7561854514,
-    "Password": 1122,
+    "Password": "1123",
     "Photo": "Photo/1122.jpg",
     "Documents": [
       {
@@ -54,8 +54,7 @@
         "description": "Results of ARPANET'23",
         "pdf": "Arts Fest/ARPANET/1122.pdf"
       }
-    ],
-    "password": "1123"
+    ]
   },
   {
     "id": 2,

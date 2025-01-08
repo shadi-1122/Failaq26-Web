@@ -2,14 +2,14 @@
   {
     "id": 1,
     "Username": "Shahin Shadi CK",
-    "adno": "1122",
+    "adno": 1122,
     "Name": "Shahin Shadi CK",
     "Guardian": "Nisar Ahammed CK",
     "address": "Cheleckodan (H), Nilaparambil, Kuttor North (PO)",
     "dateofbirth": "12-04-2011",
     "bloodgroup": "A+",
-    "phone": "7561854514",
-    "Password": "1122",
+    "phone": 7561854514,
+    "Password": 1122,
     "Photo": "Photo/1122.jpg",
     "Documents": [
       {

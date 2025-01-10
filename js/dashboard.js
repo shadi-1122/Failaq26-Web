@@ -39,7 +39,7 @@ if (loggedInUser) {
         userPhoto.src = 'photo/Unknown.png'; 
     }
 } else {
-    window.location.href = 'https://failaq-users.vercel.app'; 
+    window.location.href = 'index.html'; 
 }
 
 
@@ -414,6 +414,112 @@ let studentsData = [];
         function imgC(){
             document.getElementById('small').classList.remove('active')
             document.getElementById('ovrl').classList.remove('active')
+        }
+
+        const pass = document.getElementById('chngps')
+        const sh = document.getElementById('details')
+
+        function pas(){
+            sh.classList.toggle('active')
+        }
+
+        const GITHUB_TOKEN = "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"; // Replace with your token
+        const REPO_OWNER = "shadi-1122";
+        const REPO_NAME = "Failaq26-Web";
+        const FILE_PATH = "users.json";
+        const BRANCH = "main";
+
+        // Fetch JSON data
+        async function fetchJSON() {
+            const response = await fetch(`https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/${BRANCH}/${FILE_PATH}`);
+            return response.json();
+        }
+
+        // Toggle details visibility
+        function toggleDetails() {
+            const details = document.getElementById('details');
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+            document.getElementById('error-message').textContent = '';
+            document.getElementById('success-message').textContent = '';
+        }
+
+        // Cancel edit
+        function cancelEdit() {
+            document.getElementById('details').style.display = 'none';
+        }
+
+        // Save password
+        async function savePassword() {
+            const previousPassword = document.getElementById('previous-password').value;
+            const newPassword = document.getElementById('new-password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+
+            const errorMessage = document.getElementById('error-message');
+            const successMessage = document.getElementById('success-message');
+            errorMessage.textContent = '';
+            successMessage.textContent = '';
+
+            const jsonData = await fetchJSON();
+            let userFound = false;
+
+            // Search for the user with matching previous password
+            for (let user of jsonData) {
+                if (String(user.Password) === previousPassword) {
+                    // If the previous password matches, update the password
+                    user.Password = newPassword;
+                    userFound = true;
+                    break;
+                }
+            }
+
+            if (!userFound) {
+                errorMessage.textContent = 'Previous password is incorrect.';
+                return;
+            }
+
+            // Validate New Password
+            if (newPassword !== confirmPassword) {
+                errorMessage.textContent = 'New password and confirmation do not match.';
+                return;
+            }
+
+            if (!newPassword.trim()) {
+                errorMessage.textContent = 'New password cannot be empty.';
+                return;
+            }
+
+            // Update JSON file on GitHub
+            const fileSHA = await getFileSHA();
+            await updateJSONOnGitHub(jsonData, fileSHA);
+
+            successMessage.textContent = 'Password changed successfully!';
+        }
+
+        // Get file SHA
+        async function getFileSHA() {
+            const response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`, {
+                headers: { Authorization: `Bearer ${GITHUB_TOKEN}` }
+            });
+            const data = await response.json();
+            return data.sha;
+        }
+
+        // Update JSON on GitHub
+        async function updateJSONOnGitHub(newData, fileSHA) {
+            const updatedContent = btoa(JSON.stringify(newData, null, 2)); // Encode JSON to Base64
+            await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`, {
+                method: 'PUT',
+                headers: {
+                    Authorization: `Bearer ${GITHUB_TOKEN}`,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    message: 'Update JSON data',
+                    content: updatedContent,
+                    sha: fileSHA,
+                    branch: BRANCH,
+                }),
+            });
         }
 
 

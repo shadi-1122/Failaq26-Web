@@ -424,7 +424,10 @@ position: relative;
         width: 150px;
         height: 120px;
         text-align: left;
-        padding: 40px;
+        padding: 50px;
+        padding-left: 30px;
+        padding-right: 75px;
+        padding-bottom: 90px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     }
 
@@ -434,11 +437,13 @@ position: relative;
     }
 
     .small a{
+        position: relative;
         display: flex;
         padding: 10px;
         border: 1px solid var(--main-color);
         border-radius: 10px;
         text-decoration: none;
+        width: 180px;
         margin-top: 15px;
         text-align: center;
         align-items: center;
@@ -506,6 +511,78 @@ position: relative;
     
     .ovrl.active {
         display: block;
+    }
+
+    .details {
+        display: none;
+        background-color: var(--light-color);
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: 0 auto;
+        width: 30%;
+        height: auto;
+    }
+
+    .dt{
+        background: none;
+    }
+
+    .dt h3 {
+        margin: 0 0 10px;
+    }
+
+    .dt button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        margin: 0 auto;
+        padding: 10px 15px;
+        width: 50%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .dt button:hover {
+        background-color: #8a3324;
+    }
+
+    .details.active{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .card input {
+        width: 70%;
+        padding: 10px;
+        margin: 5px 0;
+        margin-bottom: 15px;
+        margin-top: 5px;
+        color: var(--main-color);
+        border: 1px solid var(--light-color);
+        border-radius: 5px;
+    }
+
+    #password-link{
+        display: none;
+    }
+
+
+    #password-list{
+        margin-left: 34%;
+    }
+
+
+    .error {
+        color: red;
+        margin-top: 5px;
+    }
+
+    .success {
+        color: green;
+        margin-top: 5px;
     }
     
     .flex{
@@ -1204,6 +1281,10 @@ position: relative;
 
         .result-section{
             width: 320px;
+        }
+
+        #password-list{
+            margin-left: 0%;
         }
     
         hr{

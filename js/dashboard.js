@@ -522,4 +522,40 @@ let studentsData = [];
             });
         }
 
+        const repo = 'shadi-1122/Failaq26-Web'; // Your repo details
+        const filePath = 'users.json';
+        const url = `https://api.github.com/repos/${repo}/contents/${filePath}`;
+
+          try {
+            const response = await fetch(url);
+            const data = await response.json();
+        
+            // Decode Base64 content
+            const content = JSON.parse(atob(data.content));
+            return content;
+          } catch (error) {
+            console.error('Error fetching notifications:', error);
+          }
+        }
+        
+        function displayNotifications(users) {
+          const notificationList = document.getElementById('notification-list');
+          notificationList.innerHTML = ''; // Clear existing notifications
+        
+          users.forEach(user => {
+            user.notifications.forEach(notification => {
+              const li = document.createElement('li');
+              li.textContent = `${user.username}: ${notification.message}`;
+              notificationList.appendChild(li);
+            });
+          });
+        }
+        
+        // Example usage:
+        async function loadDashboard() {
+          const users = await fetchNotifications();
+          displayNotifications(users);
+        }
+
+
 

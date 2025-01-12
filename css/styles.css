@@ -6,6 +6,13 @@ body {
     overflow-y: hidden;
 }
 
+:root{
+    --main-color:#b67468;
+    --hover-dark:#8a3324;
+    --light-color:#e4dfdd;
+    --dark-color:#9d3b2a;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -20,7 +27,7 @@ main{
     max-width: 300px;
     margin: 100px auto;
     padding: 20px;
-    background-color: #e2d0c0;
+    background-color: var(--light-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 25px;
 }
@@ -36,25 +43,26 @@ main{
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    background-color: #e2d0c0;
-    color: #8b4121;
+    background-color: var(--light-color);
+    color: var(--dark-color);
 }
 
 .login-form input {
     width: 90%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #8b4121;
+    border: 1px solid var(--dark-color);
     border-radius: 8px;
     font-size: 16px;
-    background-color: #e2d0c0;
-    color: #8b4121;
+    background-color: var(--light-color);
+    color: var(--dark-color);
 }
+
 
 .login-form button {
     width: 100%;
     padding: 10px;
-    background-color: #8b4121;
+    background-color: var(--dark-color);
     color: white;
     border: none;
     border-radius: 8px;
@@ -63,7 +71,7 @@ main{
 }
 
 .login-form button:hover {
-    background-color: #ad522b;
+    background-color: var(--dark-color);
 }
 
 .img{

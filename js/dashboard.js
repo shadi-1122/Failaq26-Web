@@ -429,7 +429,7 @@ let studentsData = [];
             sh.classList.toggle('active')
         }
 
-        const GITHUB_TOKEN = "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"; // Replace with your token
+        const GITHUB_TOKEN = "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"; // Replace with your token
         const REPO_OWNER = "shadi-1122";
         const REPO_NAME = "Failaq26-Web";
         const FILE_PATH = "users.json";

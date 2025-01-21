@@ -42,6 +42,12 @@ if (loggedInUser) {
     window.location.href = 'index.html'; 
 }
 
+const ad = "Shahin Shadi CK"
+
+if (loggedInUser.Username == ad){
+    document.getElementById('me').innerHTML = "ADMIN"
+}
+
 
 const links = document.querySelectorAll('.menu a');
 const pages = document.querySelectorAll('.page');
@@ -423,7 +429,7 @@ let studentsData = [];
             sh.classList.toggle('active')
         }
 
-        const GITHUB_TOKEN = "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"; // Replace with your token
+        const GITHUB_TOKEN = "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"; // Replace with your token
         const REPO_OWNER = "shadi-1122";
         const REPO_NAME = "Failaq26-Web";
         const FILE_PATH = "users.json";

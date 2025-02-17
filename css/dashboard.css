@@ -1215,6 +1215,10 @@ position: relative;
         color: #8b4121;
     }
 
+    #entry{
+        display: none;
+    }
+
     .srch{
         width: 200px;
         height: 100%;

@@ -46,6 +46,7 @@ const ad = "Shahin Shadi CK"
 
 if (loggedInUser.Username == ad){
     document.getElementById('me').innerHTML = "ADMIN"
+    document.getElementById('entry').style.display = "flex"
 }
 
 

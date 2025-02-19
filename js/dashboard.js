@@ -39,7 +39,7 @@ if (loggedInUser) {
         userPhoto.src = 'photo/Unknown.png'; 
     }
 } else {
-    window.location.href = 'index.html'; 
+    window.location.href = 'https://failaq-users.vercel.app/'; 
 }
 
 const ad = "Shahin Shadi CK"
@@ -77,7 +77,7 @@ links.forEach(link => {
 
 document.getElementById('logout-btn').addEventListener('click', () => {
     localStorage.clear(); 
-    window.location.href = 'index.html'; 
+    window.location.href = 'https://failaq-users.vercel.app/'; 
 });
 
 

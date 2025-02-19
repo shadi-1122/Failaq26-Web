@@ -46,7 +46,7 @@ const ad = "Shahin Shadi CK"
 
 if (loggedInUser.Username == ad){
     document.getElementById('me').innerHTML = "ADMIN"
-    document.getElementById('entry').style.display = "flex"
+    document.getElementById('entry-link').style.display = "flex"
 }
 
 
@@ -197,7 +197,7 @@ let studentsData = [];
             
             const months = [
                 'JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 
-                'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'
+                'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER','TO PAY'
             ];
 
             let total = 0;
@@ -456,65 +456,7 @@ let studentsData = [];
         }
 
 
-        document.getElementById("form").addEventListener("submit", function (e) {
-        e.preventDefault(); // Prevent the default form submission
-        document.getElementById("message").textContent = "Adding..";
-        document.getElementById("message").style.display = "block";
-        document.getElementById("submit-button").disabled = true;
-
-
-        // Collect the form data
-        var formData = new FormData(this);
-        var keyValuePairs = [];
-        for (var pair of formData.entries()) {
-          keyValuePairs.push(pair[0] + "=" + pair[1]);
-        }
-
-        var formDataString = keyValuePairs.join("&");
-
-        // Send a POST request to your Google Apps Script
-        fetch(
-          "https://script.google.com/macros/s/AKfycbym6MhWIEXXHM2OpACYVMNfqUfpuEjry6-EHqDh7k56vje6ZF9il9RQtjUvE2RD_DmC_w/exec",
-          {
-            redirect: "follow",
-            method: "POST",
-            body: formDataString,
-            headers: {
-              "Content-Type": "text/plain;charset=utf-8",
-            },
-          }
-        )
-          .then(function (response) {
-            // Check if the request was successful
-            if (response) {
-              return response; // Assuming your script returns JSON response
-            } else {
-              throw new Error("Failed to add money.");
-            }
-          })
-          .then(function (data) {
-            // Display a success message
-            document.getElementById("message").textContent =
-              "Money added successfully!";
-            document.getElementById("message").style.display = "block";
-            document.getElementById("message").style.backgroundColor = "green";
-            document.getElementById("message").style.color = "beige";
-            document.getElementById("submit-button").disabled = false;
-            document.getElementById("form").reset();
-
-            setTimeout(function () {
-              document.getElementById("message").textContent = "";
-              document.getElementById("message").style.display = "none";
-            }, 2600);
-          })
-          .catch(function (error) {
-            // Handle errors, you can display an error message here
-            console.error(error);
-            document.getElementById("message").textContent =
-              "An error occurred while adding money.";
-            document.getElementById("message").style.display = "block";
-          });
-      });
+       
 
 
         // Save password
@@ -591,4 +533,67 @@ let studentsData = [];
             });
         }
 
+        document.getElementById("form").addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent the default form submission
+            document.getElementById("message").textContent = "Adding..";
+            document.getElementById("message").style.display = "block";
+            document.getElementById("submit-button").disabled = true;
+            
+            // Collect the form data
+            var formData = new FormData(this);
+            var keyValuePairs = [];
+            for (var pair of formData.entries()) {
+              keyValuePairs.push(pair[0] + "=" + pair[1]);
+            }
+        
+            var formDataString = keyValuePairs.join("&");
+        
+            // Send a POST request to your Google Apps Script
+            fetch(
+              "https://script.google.com/macros/s/AKfycbym6MhWIEXXHM2OpACYVMNfqUfpuEjry6-EHqDh7k56vje6ZF9il9RQtjUvE2RD_DmC_w/exec",
+              {
+                redirect: "follow",
+                method: "POST",
+                body: formDataString,
+                headers: {
+                  "Content-Type": "text/plain;charset=utf-8",
+                },
+              }
+            )
+              .then(function (response) {
+                // Check if the request was successful
+                if (response) {
+                  return response; // Assuming your script returns JSON response
+                } else {
+                  throw new Error("Failed to add money.");
+                }
+              })
+              .then(function (data) {
+                // Display a success message
+                document.getElementById("message").textContent = "Money added successfully!";
+                document.getElementById("message").style.display = "block";
+                document.getElementById("message").style.backgroundColor = "green";
+                document.getElementById("message").style.color = "beige";
+                document.getElementById("submit-button").disabled = false;
+                document.getElementById("form").reset();
+        
+                setTimeout(function () {
+                  document.getElementById("message").textContent = "";
+                  document.getElementById("message").style.display = "none";
+                }, 2600);
+              })
+              .catch(function (error) {
+                // Handle errors, you can display an error message here
+                console.error(error);
+                document.getElementById("message").textContent = "An error occurred while adding money.";
+                document.getElementById("message").style.display = "block";
+              });
+        });
+        
+        // Cancel button function
+        document.getElementById("cancel-button").addEventListener("click", function () {
+            document.getElementById("form").reset(); // Reset form fields
+            document.getElementById("message").style.display = "none"; // Hide message
+        });
+        
 

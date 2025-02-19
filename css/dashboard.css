@@ -141,6 +141,10 @@ position: relative;
         transition: background 0.3s;
     }
 
+    #entry-link{
+        display: none;
+    }
+
     #me{
         color: #ffffff;
     }

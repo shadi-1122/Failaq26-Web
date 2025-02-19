@@ -458,101 +458,88 @@
             </div>
         </div>
 
-        <div id="entry-page" class="page">
-            <h2>Change Password</h2>
-            <div id="entry-list" class="cards-section">
-                    <div class="card" id="details">
-                        <div>
-                            <h3 class="field-label">Previous Password:</h3>
-                            <input type="password" id="previous-password" placeholder="Enter previous password">
-                        </div>
-                        <div>
-                            <h3 class="field-label">New Password:</h3>
-                            <input type="password" id="new-password" placeholder="Enter new password">
-                        </div>
-                        <div>
-                            <h3 class="field-label">Confirm New Password:</h3>
-                            <input type="password" id="confirm-password" placeholder="Confirm new password">
-                        </div>
-                        <button onclick="savePassword()">Change Password</button>
-                        <button onclick="cancelEdit()">Cancel</button>
-                        <p id="error-message" class="error"></p>
-                        <p id="success-message" class="success"></p>
-                    </div>
-                    <div class="field">
-                    <label class="field-label">Month :</label>
-                    <div class="control">
-                      <div class="select">
-                        <select name="Month" required>
-                          <option value="" disabled selected>Select a month</option>
-                          <option value="January">January</option>
-                          <option value="February">February</option>
-                          <option value="March">March</option>
-                          <option value="April">April</option>
-                          <option value="May">May</option>
-                          <option value="June">June</option>
-                          <option value="July">July</option>
-                          <option value="August">August</option>
-                          <option value="September">September</option>
-                          <option value="October">October</option>
-                          <option value="November">November</option>
-                          <option value="December">December</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
 
 
-                  <div class="field">
-                    <label class="field-label">AD No.</label>
-                    <div class="control">
-                      <input
-                        class="input"
-                        type="text"
-                        placeholder="Your AD No."
-                        name="AD No."
-                      />
-                    </div>
-                  </div>
-            
-                  <div class="field">
-                    <label class="field-label">Amount</label>
-                    <div class="control">
-                      <input
-                        class="input"
-                        type="text"
-                        placeholder="Amount"
-                        name="Amount"
-                      />
-                    </div>
-                  </div>
-            
-                  <div class="field is-grouped">
-                    <div class="control">
-                      <button type="submit" id="submit-button">
-                         ADD MONEY
-                      </button>
-                    </div>
-                    <div class="control">
-                      <button >Cancel</button>
-                    </div>
-                  </div>
-                </form>
-                <div
-                  id="message"
-                  style="
-                    display: none;
-                    margin: 20px;
-                    font-weight: bold;
-                    color: green;
-                    padding: 8px;
-                    background-color: beige;
-                    border-radius: 4px;
-                    border-color: aquamarine;
-                  "
-                ></div>
+        <div id="entry" class="page">
+            <div id="entry-list" class="card-section" style="display: flex;"> 
+            <div class="card" id="details" style="margin: 0 auto;">                   
+                      <form id="form" class="container m-4 pl-4" method="POST">
+                        <div class="field">
+                          <label class="label">Month :</label>
+                          <div class="control">
+                            <div class="select" >
+                              <select name="Month" required>
+                                <option value="" disabled selected>Select a month...</option>
+                                <option value="January">January</option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                  
+                  
+                        <div class="field">
+                          <label class="label">AD No.</label>
+                          <div class="control">
+                            <input
+                                class="inputs"
+                                type="text"
+                                placeholder="Your AD No."
+                                name="AD No."
+                            />
+                          </div>
+                        </div>
+                        <div class="field">
+                          <label class="label">Amount</label>
+                          <div class="control">
+                            <input
+                              class="inputs"
+                              type="text"
+                              placeholder="Amount"
+                              name="Amount"
+                            />
+                          </div>
+                        </div>
+                  
+                        <div class="field is-grouped">
+                          <div class="control">
+                            <button class="button is-primary" type="submit" id="submit-button">
+                               ADD MONEY
+                            </button>
+                          </div>
+                          <div class="control">
+                            <button class="button is-danger" type="submit" id="cancel-button">Cancel</button>
+                          </div>
+                        </div>
+                      </form>
+                      <div
+                        id="message"
+                        style="
+                          display: none;
+                          margin: 20px;
+                          font-weight: bold;
+                          color: green;
+                          padding: 8px;
+                          background-color: beige;
+                          border-radius: 4px;
+                          border-color: aquamarine;
+                        "
+                    ></div>
+                </div>
             </div>
         </div>
+
+
 
         <!-- Gallery Section -->
         <div id="gallery" class="page">

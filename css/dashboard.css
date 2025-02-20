@@ -1402,6 +1402,12 @@ position: relative;
             gap: 20px;  
          }
 
+        .cards-sections{
+            display: grid;
+            grid-template-columns:auto;
+            gap: 20px;  
+         }
+
         .spcl-card3{
             display: block;
         }

@@ -39,7 +39,7 @@ if (loggedInUser) {
         userPhoto.src = 'photo/Unknown.png'; 
     }
 } else {
-    window.location.href = 'https://failaq-users.vercel.app/'; 
+    window.location.href = 'index.html'; 
 }
 
 const ad = "Shahin Shadi CK"
@@ -47,6 +47,7 @@ const ad = "Shahin Shadi CK"
 if (loggedInUser.Username == ad){
     document.getElementById('me').innerHTML = "ADMIN"
     document.getElementById('entry-link').style.display = "flex"
+    document.getElementById('User-link').style.display = "flex"
 }
 
 
@@ -77,7 +78,7 @@ links.forEach(link => {
 
 document.getElementById('logout-btn').addEventListener('click', () => {
     localStorage.clear(); 
-    window.location.href = 'https://failaq-users.vercel.app/'; 
+    window.location.href = 'index.html'; 
 });
 
 
@@ -430,11 +431,13 @@ let studentsData = [];
             sh.classList.toggle('active')
         }
 
-        const GITHUB_TOKEN = "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"; // Replace with your token
+        const GITHUB_TOKEN = "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"; // Replace with your token
         const REPO_OWNER = "shadi-1122";
         const REPO_NAME = "Failaq26-Web";
         const FILE_PATH = "users.json";
         const BRANCH = "main";
+
+        const cardsContainer = document.getElementById('cards-container');
 
         // Fetch JSON data
         async function fetchJSON() {
@@ -442,68 +445,81 @@ let studentsData = [];
             return response.json();
         }
 
+        // Render cards
+        function renderCards(data) {
+            cardsContainer.innerHTML = '';
+            data.forEach((user, index) => {
+                const card = document.createElement('div');
+                card.className = 'card';
+
+                card.innerHTML = `
+                    <h3>${user.Username}</h3>
+                    <p><strong>Password:</strong>${user.Password}</p>
+                    <button onclick="toggleDetails(${index})">Edit</button>
+                    <div class="details" id="details-${index}">
+                        ${renderDetails(user, index)}
+                        <button onclick="saveChanges(${index})">Save</button>
+                        <button onclick="cancelEdit(${index})">Cancel</button>
+                    </div>
+                `;
+                cardsContainer.appendChild(card);
+            });
+        }
+
+        // Render detailed fields
+        function renderDetails(user, index) {
+            let fieldsHTML = '';
+            for (const key in user) {
+                if (typeof user[key] === 'object') {
+                    fieldsHTML += `
+                        <div class = "oc">
+                            <textarea id="${key}-${index}">${JSON.stringify(user[key], null, 2)}</textarea>
+                        </div>
+                    `;
+                } else {
+                    fieldsHTML += `
+                        <div>
+                            <input type="text" id="${key}-${index}" value="${user[key]}">
+                        </div>
+                    `;
+                }
+            }
+            return fieldsHTML;
+        }
+
         // Toggle details visibility
-        function toggleDetails() {
-            const details = document.getElementById('details');
+        function toggleDetails(index) {
+            const details = document.getElementById(`details-${index}`);
             details.style.display = details.style.display === 'block' ? 'none' : 'block';
-            document.getElementById('error-message').textContent = '';
-            document.getElementById('success-message').textContent = '';
         }
 
         // Cancel edit
-        function cancelEdit() {
-            document.getElementById('details').style.display = 'none';
+        function cancelEdit(index) {
+            document.getElementById(`details-${index}`).style.display = 'none';
         }
 
-
-       
-
-
-        // Save password
-        async function savePassword() {
-            const previousPassword = document.getElementById('previous-password').value;
-            const newPassword = document.getElementById('new-password').value;
-            const confirmPassword = document.getElementById('confirm-password').value;
-
-            const errorMessage = document.getElementById('error-message');
-            const successMessage = document.getElementById('success-message');
-            errorMessage.textContent = '';
-            successMessage.textContent = '';
-
+        // Save changes
+        async function saveChanges(index) {
             const jsonData = await fetchJSON();
-            let userFound = false;
 
-            // Search for the user with matching previous password
-            for (let user of jsonData) {
-                if (String(user.Password) === previousPassword) {
-                    // If the previous password matches, update the password
-                    user.Password = newPassword;
-                    userFound = true;
-                    break;
+            for (const key in jsonData[index]) {
+                const input = document.getElementById(`${key}-${index}`);
+                if (input) {
+                    try {
+                        jsonData[index][key] = JSON.parse(input.value); // Parse JSON if object
+                    } catch (e) {
+                        jsonData[index][key] = input.value; // Treat as string for other fields
+                    }
                 }
-            }
-
-            if (!userFound) {
-                errorMessage.textContent = 'Previous password is incorrect.';
-                return;
-            }
-
-            // Validate New Password
-            if (newPassword !== confirmPassword) {
-                errorMessage.textContent = 'New password and confirmation do not match.';
-                return;
-            }
-
-            if (!newPassword.trim()) {
-                errorMessage.textContent = 'New password cannot be empty.';
-                return;
             }
 
             // Update JSON file on GitHub
             const fileSHA = await getFileSHA();
             await updateJSONOnGitHub(jsonData, fileSHA);
 
-            successMessage.textContent = 'Password changed successfully!';
+            // Refresh UI
+            renderCards(jsonData);
+            alert('Changes saved successfully!');
         }
 
         // Get file SHA
@@ -532,6 +548,14 @@ let studentsData = [];
                 }),
             });
         }
+
+        // Initialize
+        async function init() {
+            const data = await fetchJSON();
+            renderCards(data);
+        }
+
+        init();
 
         document.getElementById("form").addEventListener("submit", function (e) {
             e.preventDefault(); // Prevent the default form submission

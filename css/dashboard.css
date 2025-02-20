@@ -141,10 +141,6 @@ position: relative;
         transition: background 0.3s;
     }
 
-    #entry-link{
-        display: none;
-    }
-
     #me{
         color: #ffffff;
     }
@@ -656,6 +652,8 @@ position: relative;
         display: block;
     }
 
+
+
     .details {
         display: none;
         background-color: var(--light-color);
@@ -664,8 +662,12 @@ position: relative;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         text-align: center;
         margin: 0 auto;
-        width: 30%;
+        width: 80%;
         height: auto;
+    }
+
+    #User-link{
+        display: none;
     }
 
     .dt{
@@ -747,6 +749,13 @@ position: relative;
         gap: 20px;
         
     }
+
+    .cards-sections {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        
+    }
     
     .card {
         background-color: var(--light-color);
@@ -791,6 +800,10 @@ position: relative;
     .card button:hover {
         background-color: var(--hover-dark);
         
+    }
+
+    #entry-link{
+        display: none;
     }
 
     .cards {

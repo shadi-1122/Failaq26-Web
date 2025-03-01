@@ -29,16 +29,22 @@
         <button class="close-btn" onclick="toggleMenu()">✖</button>
         <h2>Menu</h2>
         <nav class="menu">
-            <a href="#" id="home-link" class="active"><svg xmlns="http://www.w3.org/2000/svg" height="24.5px" viewBox="0 -960 960 960" width="24.5px" fill="#e4dfdd"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>Dashboard</a>
-            <a href="#" id="User-link"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113ZM120-240h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0 320Zm0-400Z"/></svg>Users</a>
-            <a href="#" id="profile-link"><svg id="svpr" xmlns="http://www.w3.org/2000/svg" height="24.5px" viewBox="0 -960 960 960" width="24.5px" fill="#e4dfdd"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>Profile</a>
-            <a href="#" id="Updates-link"><svg xmlns="http://www.w3.org/2000/svg" height="24.5px" viewBox="0 -960 960 960" width="24.5px" fill="#e4dfdd"><path d="M360-200v-80h480v80H360Zm0-240v-80h480v80H360Zm0-240v-80h480v80H360ZM200-160q-33 0-56.5-23.5T120-240q0-33 23.5-56.5T200-320q33 0 56.5 23.5T280-240q0 33-23.5 56.5T200-160Zm0-240q-33 0-56.5-23.5T120-480q0-33 23.5-56.5T200-560q33 0 56.5 23.5T280-480q0 33-23.5 56.5T200-400Zm0-240q-33 0-56.5-23.5T120-720q0-33 23.5-56.5T200-800q33 0 56.5 23.5T280-720q0 33-23.5 56.5T200-640Z"/></svg>Updates</a>
-            <a href="#" id="documents-link"><svg xmlns="http://www.w3.org/2000/svg" height="24.5px" viewBox="0 -960 960 960" width="24.5px" fill="#e4dfdd"><path d="M240-80q-50 0-85-35t-35-85v-120h120v-560l60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60v680q0 50-35 85t-85 35H240Zm480-80q17 0 28.5-11.5T760-200v-560H320v440h360v120q0 17 11.5 28.5T720-160ZM360-600v-80h240v80H360Zm0 120v-80h240v80H360Zm320-120q-17 0-28.5-11.5T640-640q0-17 11.5-28.5T680-680q17 0 28.5 11.5T720-640q0 17-11.5 28.5T680-600Zm0 120q-17 0-28.5-11.5T640-520q0-17 11.5-28.5T680-560q17 0 28.5 11.5T720-520q0 17-11.5 28.5T680-480ZM240-160h360v-80H200v40q0 17 11.5 28.5T240-160Zm-40 0v-80 80Z"/></svg>Examination</a>
-            <a href="#" id="arts-fest-link"><svg xmlns="http://www.w3.org/2000/svg" height="24.5px" viewBox="0 -960 960 960" width="24.5px" fill="#e4dfdd"><path d="M296-270q-42 35-87.5 32T129-269q-34-28-46.5-73.5T99-436l75-124q-25-22-39.5-53T120-680q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47q-9 0-18-1t-17-3l-77 130q-11 18-7 35.5t17 28.5q13 11 31 12.5t35-12.5l420-361q42-35 88-31.5t80 31.5q34 28 46 73.5T861-524l-75 124q25 22 39.5 53t14.5 67q0 66-47 113t-113 47q-66 0-113-47t-47-113q0-66 47-113t113-47q9 0 17.5 1t16.5 3l78-130q11-18 7-35.5T782-630q-13-11-31-12.5T716-630L296-270Zm384 70q33 0 56.5-23.5T760-280q0-33-23.5-56.5T680-360q-33 0-56.5 23.5T600-280q0 33 23.5 56.5T680-200ZM280-600q33 0 56.5-23.5T360-680q0-33-23.5-56.5T280-760q-33 0-56.5 23.5T200-680q0 33 23.5 56.5T280-600Zm400 320ZM280-680Z"/></svg>Arts Fest</a>
-            <a href="#" id="monthly-link"><svg xmlns="http://www.w3.org/2000/svg" height="24.5px" viewBox="0 -960 960 960" width="24.5px" fill="#e4dfdd"><path d="M444-200h70v-50q50-9 86-39t36-89q0-42-24-77t-96-61q-60-20-83-35t-23-41q0-26 18.5-41t53.5-15q32 0 50 15.5t26 38.5l64-26q-11-35-40.5-61T516-710v-50h-70v50q-50 11-78 44t-28 74q0 47 27.5 76t86.5 50q63 23 87.5 41t24.5 47q0 33-23.5 48.5T486-314q-33 0-58.5-20.5T390-396l-66 26q14 48 43.5 77.5T444-252v52Zm36 120q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>Monthly Fund</a>
-            <a href="#" id="gallery-link"><svg xmlns="http://www.w3.org/2000/svg" height="24.5px" viewBox="0 -960 960 960" width="24.5px" fill="#e4dfdd"><path d="M360-400h400L622-580l-92 120-62-80-108 140Zm-40 160q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Gallery</a>
-            <a href="#" id="password-link"><svg xmlns="http://www.w3.org/2000/svg" height="24.5px" viewBox="0 -960 960 960" width="24.5px" fill="#e4dfdd"><path d="M360-400h400L622-580l-92 120-62-80-108 140Zm-40 160q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Gallery</a>
-            <a href="#" id="entry-link"><svg xmlns="http://www.w3.org/2000/svg" height="24.5px" viewBox="0 -960 960 960" width="24.5px" fill="#e4dfdd"><path d="M444-200h70v-50q50-9 86-39t36-89q0-42-24-77t-96-61q-60-20-83-35t-23-41q0-26 18.5-41t53.5-15q32 0 50 15.5t26 38.5l64-26q-11-35-40.5-61T516-710v-50h-70v50q-50 11-78 44t-28 74q0 47 27.5 76t86.5 50q63 23 87.5 41t24.5 47q0 33-23.5 48.5T486-314q-33 0-58.5-20.5T390-396l-66 26q14 48 43.5 77.5T444-252v52Zm36 120q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>Monthly Entry</a>
+            <a href="#home" id="home-link" class="active"><svg xmlns="http://www.w3.org/2000/svg" height="24.5px" viewBox="0 -960 960 960" width="24.5px" fill="#e4dfdd"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>Dashboard</a>
+            <a href="#User" id="User-link"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113ZM120-240h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0 320Zm0-400Z"/></svg>Users</a>
+            <a href="#profile" id="profile-link"><svg id="svpr" xmlns="http://www.w3.org/2000/svg" height="24.5px" viewBox="0 -960 960 960" width="24.5px" fill="#e4dfdd"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>Profile</a>
+            <a href="#achievements" id="achievements-link"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M280-880h400v314q0 23-10 41t-28 29l-142 84 28 92h152l-124 88 48 152-124-94-124 94 48-152-124-88h152l28-92-142-84q-18-11-28-29t-10-41v-314Zm80 80v234l80 48v-282h-80Zm240 0h-80v282l80-48v-234ZM480-647Zm-40-12Zm80 0Z"/></svg>Achievements</a>
+            <a href="#Updates" id="Updates-link"><svg xmlns="http://www.w3.org/2000/svg" height="24.5px" viewBox="0 -960 960 960" width="24.5px" fill="#e4dfdd"><path d="M360-200v-80h480v80H360Zm0-240v-80h480v80H360Zm0-240v-80h480v80H360ZM200-160q-33 0-56.5-23.5T120-240q0-33 23.5-56.5T200-320q33 0 56.5 23.5T280-240q0 33-23.5 56.5T200-160Zm0-240q-33 0-56.5-23.5T120-480q0-33 23.5-56.5T200-560q33 0 56.5 23.5T280-480q0 33-23.5 56.5T200-400Zm0-240q-33 0-56.5-23.5T120-720q0-33 23.5-56.5T200-800q33 0 56.5 23.5T280-720q0 33-23.5 56.5T200-640Z"/></svg>Updates</a>
+            <a href="#documents" id="documents-link"><svg xmlns="http://www.w3.org/2000/svg" height="24.5px" viewBox="0 -960 960 960" width="24.5px" fill="#e4dfdd"><path d="M240-80q-50 0-85-35t-35-85v-120h120v-560l60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60v680q0 50-35 85t-85 35H240Zm480-80q17 0 28.5-11.5T760-200v-560H320v440h360v120q0 17 11.5 28.5T720-160ZM360-600v-80h240v80H360Zm0 120v-80h240v80H360Zm320-120q-17 0-28.5-11.5T640-640q0-17 11.5-28.5T680-680q17 0 28.5 11.5T720-640q0 17-11.5 28.5T680-600Zm0 120q-17 0-28.5-11.5T640-520q0-17 11.5-28.5T680-560q17 0 28.5 11.5T720-520q0 17-11.5 28.5T680-480ZM240-160h360v-80H200v40q0 17 11.5 28.5T240-160Zm-40 0v-80 80Z"/></svg>Examination</a>
+            <a href="#arts-fest" id="arts-fest-link"><svg xmlns="http://www.w3.org/2000/svg" height="24.5px" viewBox="0 -960 960 960" width="24.5px" fill="#e4dfdd"><path d="M296-270q-42 35-87.5 32T129-269q-34-28-46.5-73.5T99-436l75-124q-25-22-39.5-53T120-680q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47q-9 0-18-1t-17-3l-77 130q-11 18-7 35.5t17 28.5q13 11 31 12.5t35-12.5l420-361q42-35 88-31.5t80 31.5q34 28 46 73.5T861-524l-75 124q25 22 39.5 53t14.5 67q0 66-47 113t-113 47q-66 0-113-47t-47-113q0-66 47-113t113-47q9 0 17.5 1t16.5 3l78-130q11-18 7-35.5T782-630q-13-11-31-12.5T716-630L296-270Zm384 70q33 0 56.5-23.5T760-280q0-33-23.5-56.5T680-360q-33 0-56.5 23.5T600-280q0 33 23.5 56.5T680-200ZM280-600q33 0 56.5-23.5T360-680q0-33-23.5-56.5T280-760q-33 0-56.5 23.5T200-680q0 33 23.5 56.5T280-600Zm400 320ZM280-680Z"/></svg>Arts Fest</a>
+            <a href="#Sibaq" id="Sibaq-link"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m387-412 35-114-92-74h114l36-112 36 112h114l-93 74 35 114-92-71-93 71ZM240-40v-309q-38-42-59-96t-21-115q0-134 93-227t227-93q134 0 227 93t93 227q0 61-21 115t-59 96v309l-240-80-240 80Zm240-280q100 0 170-70t70-170q0-100-70-170t-170-70q-100 0-170 70t-70 170q0 100 70 170t170 70ZM320-159l160-41 160 41v-124q-35 20-75.5 31.5T480-240q-44 0-84.5-11.5T320-283v124Zm160-62Z"/></svg>Sibaq</a>
+            <a href="#arts-fest-union" id="arts-fest-union-link"></a>
+            <a href="#arts-fest-college" id="arts-fest-college-link"></a>
+            <a href="#safar24" id="safar24-link"></a>
+            <a href="#monthly" id="monthly-link"><svg xmlns="http://www.w3.org/2000/svg" height="24.5px" viewBox="0 -960 960 960" width="24.5px" fill="#e4dfdd"><path d="M444-200h70v-50q50-9 86-39t36-89q0-42-24-77t-96-61q-60-20-83-35t-23-41q0-26 18.5-41t53.5-15q32 0 50 15.5t26 38.5l64-26q-11-35-40.5-61T516-710v-50h-70v50q-50 11-78 44t-28 74q0 47 27.5 76t86.5 50q63 23 87.5 41t24.5 47q0 33-23.5 48.5T486-314q-33 0-58.5-20.5T390-396l-66 26q14 48 43.5 77.5T444-252v52Zm36 120q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>Monthly Fund</a>
+            <a href="#gallery" id="gallery-link"><svg xmlns="http://www.w3.org/2000/svg" height="24.5px" viewBox="0 -960 960 960" width="24.5px" fill="#e4dfdd"><path d="M360-400h400L622-580l-92 120-62-80-108 140Zm-40 160q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Gallery</a>
+            <a href="#password" id="password-link"><svg xmlns="http://www.w3.org/2000/svg" height="24.5px" viewBox="0 -960 960 960" width="24.5px" fill="#e4dfdd"><path d="M360-400h400L622-580l-92 120-62-80-108 140Zm-40 160q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Gallery</a>
+            <a href="#entry" id="entry-link"><svg xmlns="http://www.w3.org/2000/svg" height="24.5px" viewBox="0 -960 960 960" width="24.5px" fill="#e4dfdd"><path d="M444-200h70v-50q50-9 86-39t36-89q0-42-24-77t-96-61q-60-20-83-35t-23-41q0-26 18.5-41t53.5-15q32 0 50 15.5t26 38.5l64-26q-11-35-40.5-61T516-710v-50h-70v50q-50 11-78 44t-28 74q0 47 27.5 76t86.5 50q63 23 87.5 41t24.5 47q0 33-23.5 48.5T486-314q-33 0-58.5-20.5T390-396l-66 26q14 48 43.5 77.5T444-252v52Zm36 120q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>Monthly Entry</a>
+            <a href="#" id=""></a>
         </nav>
     </div>
 
@@ -51,208 +57,6 @@
     <main class="content">
         <!-- Home Section -->
         <div id="home" class="page active">
-            <h2 id="sbq">SIBAQ'25</h2>
-            <div class="carousel-container" id="sibaq">
-                <div class="carousel-track">
-                    <div class="carousel-item">
-                        <img src="Photo/1121.jpg">
-                        <h3 class="nme">Muhammed Nawaf M</h3>
-                        <div>
-                            <h3 id="r"></h3>
-                            <div class="cards">
-                                <h3>Speech ARB</h3>
-                                <p>1st With A grade</p>
-                            </div>
-                            <div class="cards">
-                                <h3>Qira'th</h3>
-                                <p>2nd With B grade</p>
-                            </div>
-                            <h3 id="r">Total Points : 16</h3>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Photo/1122.jpg">
-                        <h3 class="nme">Shahin Shadi CK</h3>
-                        <div>
-                            <h3 id="r"></h3>
-                            <div class="cards">
-                                <h3>PowerPoint Creation</h3>
-                                <p>B grade</p>
-                            </div>
-                            <h3 id="r">Total Points : 03</h3>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Photo/1109.jpg">
-                        <h3 class="nme">Shaz NV</h3>
-                        <div>
-                            <h3 id="r"></h3>
-                            <div class="cards">
-                                <h3>Story Completion ENG</h3>
-                                <p>3rd With A grade</p>
-                            </div>
-                            <div class="cards">
-                                <h3>Poem Writing ENG</h3>
-                                <p>B grade</p>
-                            </div>
-                            <h3 id="r">Total Points : 09</h3>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Photo/1110.jpg">
-                        <h3 class="nme">Mishkath M</h3>
-                        <div>
-                            <h3 id="r"></h3>
-                            <div class="cards">
-                                <h3>Padhyaparayanam</h3>
-                                <p>1st With A grade</p>
-                            </div>
-                            <div class="cards">
-                                <h3>Speech & Song</h3>
-                                <p>1st With A grade</p>
-                            </div>
-                            <h3 id="r">Total Points : 10</h3>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Photo/1107.jpg">
-                        <h3 class="nme">Muhammed Sinan CK</h3>
-                        <div>
-                            <h3 id="r"></h3>
-                            <div class="cards">
-                                <h3>Typing Billingual</h3>
-                                <p>1st With A grade</p>
-                            </div>
-                            <div class="cards">
-                                <h3>Vocabulary</h3>
-                                <p>2nd With B grade</p>
-                            </div>
-                            <h3 id="r">Total Points : 16</h3>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Photo/1113.jpg">
-                        <h3 class="nme">Muhammedhaly Shihab</h3>
-                        <div>
-                            <h3 id="r"></h3>
-                            <div class="cards">
-                                <h3>Hindi Vidvan</h3>
-                                <p>B grade</p>
-                            </div>
-                            <h3 id="r">Total Points : 5</h3>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Photo/1083.jpg">
-                        <h3 class="nme">Muhammed Sahal P</h3>
-                        <div>
-                            <h3 id="r"></h3>
-                            <div class="cards">
-                                <h3>Sudoku</h3>
-                                <p>B grade</p>
-                            </div>
-                            <h3 id="r">Total Points : 3</h3>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Photo/1096.jpg">
-                        <h3 class="nme">Afnan Ahmed K</h3>
-                        <div>
-                            <h3 id="r"></h3>
-                            <div class="cards">
-                                <h3>News Writing MLM</h3>
-                                <p>B grade</p>
-                            </div>
-                            <div class="cards">
-                                <h3>Essay Writing MLM</h3>
-                                <p>3rd with B grade</p>
-                            </div>
-                            <div class="cards">
-                                <h3>Gk Quiz</h3>
-                                <p>3rd</p>
-                            </div>
-                            <h3 id="r">Total Points : 08</h3>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Photo/1097.jpg">
-                        <h3 class="nme">Irfan Razim V</h3>
-                        <div>
-                            <h3 id="r"></h3>
-                            <div class="cards">
-                                <h3>Swarf IQ</h3>
-                                <p>2nd With B grade</p>
-                            </div>
-                            <div class="cards">
-                                <h3>Memory Test</h3>
-                                <p>B grade</p>
-                            </div>
-                            <div class="cards">
-                                <h3>Mulafaza ARB</h3>
-                                <p>B grade</p>
-                            </div>
-                            <h3 id="r">Total Points : 16</h3>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Photo/1098.jpg">
-                        <h3 class="nme">Hanan BK</h3>
-                        <div>
-                            <h3 id="r"></h3>
-                            <div class="cards">
-                                <h3>Pencil Drawing</h3>
-                                <p>1st With A grade</p>
-                            </div>
-                            <div class="cards">
-                                <h3>Poster Designing</h3>
-                                <p>B grade</p>
-                            </div>
-                            <h3 id="r">Total Points : 13</h3>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Photo/1099.jpg">
-                        <h3 class="nme">Muhammed Ayman E</h3>
-                        <div>
-                            <h3 id="r"></h3>
-                            <div class="cards">
-                                <h3>Spelling Bee</h3>
-                                <p>2nd Without any Grade</p>
-                            </div>
-                            <h3 id="r">Total Points : 03</h3>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Photo/1105.jpg">
-                        <h3 class="nme">Afshar M</h3>
-                        <div>
-                            <h3 id="r"></h3>
-                            <div class="cards">
-                                <h3>Story Completion ARB</h3>
-                                <p>3rd With B grade</p>
-                            </div>
-                            <h3 id="r">Total Points : 04</h3>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Photo/1108.jpg">
-                        <h3 class="nme">Shahas AC</h3>
-                        <div>
-                            <h3 id="r"></h3>
-                            <div class="cards">
-                                <h3>Geo Giant</h3>
-                                <p>A grade</p>
-                            </div>
-                            <h3 id="r">Total Points : 07</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-buttons">
-                <button class="carousel-button" id="prevButton">Previous</button>
-                <button class="carousel-button" id="nextButton">Next</button>
-            </div>
-
             <h2>Exam Toppers</h2>
             <section class="spcards-section">
                 <div onclick="window.open('Exam/H 2024-25/1098.pdf')" class="spcl-card1">
@@ -278,8 +82,6 @@
                             <circle class="circle1" cx="51" cy="51" r="41" stroke-linecap="round" />
                         </svg>
                     </div>
-                    <h4 id="mark2">1600</h4>
-                    <p>Marks</p>
                 </div>
                 <div onclick="window.open('Exam/H 2024-25/1104.pdf')" class="spcl-cardc">
                     <img src="Photo/1104.jpg" alt="">
@@ -288,7 +90,7 @@
                         <div class="otr1">
                             <div class="inner">
                                 <div id="number1">
-                                    94.24%
+                                    94%
                                 </div>
                             </div>
                         </div>
@@ -304,8 +106,6 @@
                             <circle class="circle" cx="53" cy="53" r="43" stroke-linecap="round" />
                         </svg>
                     </div>
-                    <h4 id="mark1">1602</h4>
-                    <p>Marks</p>
                 </div>
                 <div onclick="window.open('Exam/H 2024-25/1098.pdf')" class="spcl-card3">
                     <img src="Photo/1098.jpg" alt="">
@@ -330,8 +130,6 @@
                             <circle class="circle1" cx="51" cy="51" r="41" stroke-linecap="round" />
                         </svg>
                     </div>
-                    <h4 id="mark2">1600</h4>
-                    <p>Marks</p>
                 </div>
                 <div onclick="window.open('Exam/H 2024-25/1107.pdf')" class="spcl-card">
                     <img src="Photo/1107.jpg" alt="">
@@ -355,24 +153,39 @@
                             </defs>
                             <circle class="circle2" cx="51" cy="51" r="41" stroke-linecap="round" />
                         </svg>
-                    </div>
-                    <h4 id="mark3">1592</h4>
-                    <p>Marks</p>
+                    </div>  
                 </div>
             </section>
+
+            <h2 style="margin-top: 50px;">Core Committee</h2>
+            <div class="cards-section">
+                <div class="card" style="background-color: #b67468; box-shadow: none;">
+                    <h1 style="color: #ffffff;">Secretary</h1>
+                    <img src="Photo/1109.jpg" style="border: 2px solid #ffffff;">
+                    <h3 style="color: #ffffff;">Shaz Abdul Sammed NV</h3>
+                </div>
+                <div class="card" style="background-color: #b67468; box-shadow: none;">
+                    <h1 style="color: #ffffff;">President</h1>
+                    <img src="Photo/1115.jpg" style="border: 2px solid #ffffff;">
+                    <h3 style="color: #ffffff;">Najmudheen K</h3>
+                </div>
+                <div class="card" style="background-color: #b67468; box-shadow: none;">
+                    <h1 style="color: #ffffff;">Treasurer</h1>
+                    <img src="Photo/1108.jpg" style="border: 2px solid #ffffff;">
+                    <h3 style="color: #ffffff;">Muhammed Shahas AC</h3>
+                </div>
+            </div>
         </div>
 
         <!-- Profile Section -->
         <div id="profile" class="page">
+            <div class="backbtn" onclick="document.getElementById('home-link').click()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></div>
             <div class="flex">
-
                 <div>
-                    
                     <h2>User Profile</h2>
                     <img id="user-photo" class="profile-photo">
                 </div>
                 <article>
-                    
                     <ul>
                         
                         <li><strong>Name:</strong> <span id="user-Name" class="p"></span></li>
@@ -389,6 +202,7 @@
 
 
         <div id="User" class="page">
+            <div class="backbtn" onclick="document.getElementById('home-link').click()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></div>
             <h1>USERS</h1>
             <div class="cards-sections" id="cards-container"></div>
         </div>
@@ -397,17 +211,96 @@
 
         <!-- Documents Section -->
         <div id="documents" class="page">
+            <div class="backbtn" onclick="document.getElementById('home-link').click()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></div>
             <h2>Examination</h2>
-            <div id="documents-list" class="cards-section"></div>
+            <div id="documents-list" class="cards-section">
+                <div class="card">
+                    <h3>2022-23</h3>
+                    <p>Half Yearly Examination 2022-23</p>
+                    <button onclick="h2022()">Click here</button>
+                </div>
+                <div class="card">
+                    <h3>2022-23</h3>
+                    <p>Annual Examination 2022-23</p>
+                    <button onclick="a2022()">Click here</button>
+                </div>
+                <div class="card">
+                    <h3>2023-24</h3>
+                    <p>Half Yearly Examination 2023-24</p>
+                    <button onclick="h2023()">Click here</button>
+                </div>
+                <div class="card">
+                    <h3>2023-24</h3>
+                    <p>Half Yearly Examination 2023-24</p>
+                    <button onclick="a2023()">Click here</button>
+                </div>
+                <div class="card">
+                    <h3>2024-25</h3>
+                    <p>Half Yearly Examination 2024-25</p>
+                    <button onclick="h2024()">Click here</button>
+                </div>
+                <div class="card">
+                    <h3>2024-25</h3>
+                    <p>Half Yearly Examination 2024-25</p>
+                    <button onclick="a2024()">Click here</button>
+                </div>
+            </div>
         </div>
 
         <!-- Arts Fest Section -->
         <div id="arts-fest" class="page">
+            <div class="backbtn" onclick="document.getElementById('home-link').click()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></div>
             <h2>Arts Fest</h2>
-            <div id="arts-fest-list" class="cards-section"></div>
+            <div id="arts-fest-list" class="cards-sections">
+                <div class="card">
+                    <h3>Union Fest</h3>
+                    <p>Check union artsfest results</p>
+                    <button onclick="document.getElementById('arts-fest-union-link').click()">Check</button>
+                </div>
+                <div class="card">
+                    <h3>College Fest</h3>
+                    <p>Check College artsfest results</p>
+                    <button onclick="document.getElementById('arts-fest-college-link').click()">Check</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="arts-fest-union" class="page">
+            <div class="backbtn" onclick="document.getElementById('arts-fest-link').click()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></div>
+            <h2>Union Arts Fest</h2>
+            <div id="arts-fest-union-list" class="cards-section">
+                <div class="card">
+                    <h3>Rastakhiz'24</h3>
+                    <p>Check your results</p>
+                    <button onclick="rsthz()">Check</button>
+                </div>
+                <div class="card">
+                    <h3>Arpanet'23</h3>
+                    <p>Check your results</p>
+                    <button onclick="arpnt()">Check</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="arts-fest-college" class="page">
+            <div class="backbtn" onclick="document.getElementById('arts-fest-link').click()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></div>
+            <h2>College Arts Fest</h2>
+            <div id="arts-fest-college-list" class="cards-section">
+                <div class="card">
+                    <h3>Al Karama'24</h3>
+                    <p>Check your results</p>
+                    <button onclick="alkrm()">Check</button>
+                </div>
+                <div class="card">
+                    <h3>Tarhal'23</h3>
+                    <p>Check your results</p>
+                    <button onclick="alkrm()">Check</button>
+                </div>
+            </div>
         </div>
 
         <div id="monthly" class="page">
+            <div class="backbtn" onclick="document.getElementById('home-link').click()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></div>
             <h2>Monthly Fund</h2>
             <div class="flex">
                 <div id="monthly-list" class="card-section">
@@ -422,6 +315,7 @@
         </div>
 
         <div id="Updates" class="page">
+            <div class="backbtn" onclick="document.getElementById('home-link').click()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></div>
             <h2>Updates</h2>
             <div id="Updates-list" class="cards-section">
                 <div class="card">
@@ -441,7 +335,74 @@
                 </div>
             </div>
         </div>
+        <div id="achievements" class="page">
+            <div class="backbtn" onclick="document.getElementById('home-link').click()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></div>
+            <h2>Achievements</h2>
+            <div id="achievements-list" class="cards-section">
+                <div class="card">
+                    <h3>January</h3>
+                    <p>January achievements</p>
+                    <button onclick="janac()">Check</button>
+                </div>
+                <div class="card">
+                    <h3>February</h3>
+                    <p>February achievements</p>
+                    <button onclick="febac()">Check</button>
+                </div>
+                <div class="card">
+                    <h3>March</h3>
+                    <p>March achievements</p>
+                    <button onclick="marac()">Check</button>
+                </div>
+                <div class="card">
+                    <h3>April</h3>
+                    <p>April achievements</p>
+                    <button onclick="aprac()">Check</button>
+                </div>
+                <div class="card">
+                    <h3>May</h3>
+                    <p>May achievements</p>
+                    <button onclick="mayac()">Check</button>
+                </div>
+                <div class="card">
+                    <h3>June</h3>
+                    <p>June achievements</p>
+                    <button onclick="junac()">Check</button>
+                </div>
+                <div class="card">
+                    <h3>July</h3>
+                    <p>July achievements</p>
+                    <button onclick="julac()">Check</button>
+                </div>
+                <div class="card">
+                    <h3>August</h3>
+                    <p>August achievements</p>
+                    <button onclick="augac()">Check</button>
+                </div>
+                <div class="card">
+                    <h3>September</h3>
+                    <p>September achievements</p>
+                    <button onclick="sepac()">Check</button>
+                </div>
+                <div class="card">
+                    <h3>October</h3>
+                    <p>October achievements</p>
+                    <button onclick="octac()">Check</button>
+                </div>
+                <div class="card">
+                    <h3>November</h3>
+                    <p>November achievements</p>
+                    <button onclick="novac()">Check</button>
+                </div>
+                <div class="card">
+                    <h3>December</h3>
+                    <p>December achievements</p>
+                    <button onclick="decac()">Check</button>
+                </div>
+            </div>
+        </div>
         <div id="password" class="page">
+            <div class="backbtn" onclick="document.getElementById('home-link').click()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></div>
             <h2>Change Password</h2>
             <div id="password-list" class="cards-section">
                     <div class="card" id="details">
@@ -468,8 +429,9 @@
 
 
         <div id="entry" class="page">
+            <div class="backbtn" onclick="document.getElementById('home-link').click()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></div>
             <div id="entry-list" class="card-section" style="display: flex;"> 
-            <div class="card" id="details" style="margin: 0 auto;">                   
+            <div class="card" id="enty-details" style="margin: 0 auto;">                   
                       <form id="form" class="container m-4 pl-4" method="POST">
                         <div class="field">
                           <label class="label">Month :</label>
@@ -547,11 +509,231 @@
         </div>
 
 
+        <div id="Sibaq" class="page">
+            <div class="backbtn" onclick="document.getElementById('home-link').click()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></div>
+            <h2>SIBAQ'25</h2>
+            <div id="sibaq-list" class="cards-section">
+                <div class="card">
+                    <img src="Photo/1121.jpg">
+                    <h3 class="nme">Muhammed Nawaf M</h3>
+                    <div>
+                        <h3 id="r"></h3>
+                        <div class="cards">
+                            <h3>Speech ARB</h3>
+                            <p>1st With A grade</p>
+                        </div>
+                        <div class="cards">
+                            <h3>Qira'th</h3>
+                            <p>2nd With B grade</p>
+                        </div>
+                        <h3 id="r" style="margin-top: 25px;">Total Points : 16</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Photo/1107.jpg">
+                    <h3 class="nme">Muhammed Sinan CK</h3>
+                    <div>
+                        <h3 id="r"></h3>
+                        <div class="cards">
+                            <h3>Typing Billingual</h3>
+                            <p>1st With A grade</p>
+                        </div>
+                        <div class="cards">
+                            <h3>Vocabulary</h3>
+                            <p>2nd With B grade</p>
+                        </div>
+                        <h3 id="r" style="margin-top: 25px;">Total Points : 16</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Photo/1109.jpg">
+                    <h3 class="nme">Shaz NV</h3>
+                    <div>
+                        <h3 id="r"></h3>
+                        <div class="cards">
+                            <h3>Story Completion ENG</h3>
+                            <p>3rd With A grade</p>
+                        </div>
+                        <div class="cards">
+                            <h3>Poem Writing ENG</h3>
+                            <p>B grade</p>
+                        </div>
+                        <h3 id="r" style="margin-top: 25px;">Total Points : 09</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Photo/1083.jpg">
+                    <h3 class="nme">Muhammed Sahal P</h3>
+                    <div>
+                        <h3 id="r"></h3>
+                        <div class="cards">
+                            <h3>Sudoku</h3>
+                            <p>B grade</p>
+                        </div>
+                        <h3 id="r" style="margin-top: 25px;">Total Points : 3</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Photo/1122.jpg">
+                    <h3 class="nme">Shahin Shadi CK</h3>
+                    <div>
+                        <h3 id="r"></h3>
+                        <div class="cards">
+                            <h3>PowerPoint Creation</h3>
+                            <p>B grade</p>
+                        </div>
+                        <h3 id="r" style="margin-top: 25px;">Total Points : 03</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Photo/1113.jpg">
+                    <h3 class="nme">Muhammedhaly Shihab</h3>
+                    <div>
+                        <h3 id="r"></h3>
+                        <div class="cards">
+                            <h3>Hindi Vidvan</h3>
+                            <p>B grade</p>
+                        </div>
+                        <h3 id="r" style="margin-top: 25px;">Total Points : 5</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Photo/1110.jpg">
+                    <h3 class="nme">Mishkath M</h3>
+                    <div>
+                        <h3 id="r"></h3>
+                        <div class="cards">
+                            <h3>Padhyaparayanam</h3>
+                            <p>1st With A grade</p>
+                        </div>
+                        <div class="cards">
+                            <h3>Speech & Song</h3>
+                            <p>1st With A grade</p>
+                        </div>
+                        <h3 id="r" style="margin-top: 25px;">Total Points : 10</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Photo/1096.jpg">
+                    <h3 class="nme">Afnan Ahmed K</h3>
+                    <div>
+                        <h3 id="r"></h3>
+                        <div class="cards">
+                            <h3>News Writing MLM</h3>
+                            <p>B grade</p>
+                        </div>
+                        <div class="cards">
+                            <h3>Essay Writing MLM</h3>
+                            <p>3rd with B grade</p>
+                        </div>
+                        <div class="cards">
+                            <h3>Gk Quiz</h3>
+                            <p>3rd</p>
+                        </div>
+                        <h3 id="r" style="margin-top: 25px;">Total Points : 08</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Photo/1097.jpg">
+                    <h3 class="nme">Irfan Razim V</h3>
+                    <div>
+                        <h3 id="r"></h3>
+                        <div class="cards">
+                            <h3>Swarf IQ</h3>
+                            <p>2nd With B grade</p>
+                        </div>
+                        <div class="cards">
+                            <h3>Memory Test</h3>
+                            <p>B grade</p>
+                        </div>
+                        <div class="cards">
+                            <h3>Mulafaza ARB</h3>
+                            <p>B grade</p>
+                        </div>
+                        <h3 id="r" style="margin-top: 25px;">Total Points : 16</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Photo/1108.jpg">
+                    <h3 class="nme">Shahas AC</h3>
+                    <div>
+                        <h3 id="r"></h3>
+                        <div class="cards">
+                            <h3>Geo Giant</h3>
+                            <p>A grade</p>
+                        </div>
+                        <h3 id="r" style="margin-top: 25px;">Total Points : 07</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Photo/1099.jpg">
+                    <h3 class="nme">Muhammed Ayman E</h3>
+                    <div>
+                        <h3 id="r"></h3>
+                        <div class="cards">
+                            <h3>Spelling Bee</h3>
+                            <p>2nd Without any Grade</p>
+                        </div>
+                        <h3 id="r" style="margin-top: 25px;">Total Points : 03</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Photo/1105.jpg">
+                    <h3 class="nme">Afshar M</h3>
+                    <div>
+                        <h3 id="r"></h3>
+                        <div class="cards">
+                            <h3>Story Completion ARB</h3>
+                            <p>3rd With B grade</p>
+                        </div>
+                        <h3 id="r" style="margin-top: 25px;">Total Points : 04</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Photo/1098.jpg">
+                    <h3 class="nme">Hanan BK</h3>
+                    <div>
+                        <h3 id="r"></h3>
+                        <div class="cards">
+                            <h3>Pencil Drawing</h3>
+                            <p>1st With A grade</p>
+                        </div>
+                        <div class="cards">
+                            <h3>Poster Designing</h3>
+                            <p>B grade</p>
+                        </div>
+                        <h3 id="r" style="margin-top: 25px;">Total Points : 13</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Gallery Section -->
         <div id="gallery" class="page">
+            <div class="backbtn" onclick="document.getElementById('home-link').click()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></div>
             <h2>Gallery</h2>
-            <div id="gallery-images" class="cards-section">
+            <div id="gallery-list" class="cards-section">
+                <div class="card">
+                    <h3>Safar'24</h3>
+                    <p>Click to see Safar'24 Photos</p>
+                    <button onclick="document.getElementById('safar24-link').click()">Click here</button>
+                </div>
+                <div class="card">
+                    <h3>Camp</h3>
+                    <p>Click to see Camp photos</p>
+                    <button onclick="document.getElementById('safar24-link').click()">Click here</button>
+                </div>
+                <div class="card">
+                    <h3>Others</h3>
+                    <p>Click to see other photos</p>
+                    <button onclick="document.getElementById('safar24-link').click()">Click here</button>
+                </div>
+            </div>
+        </div>
+        <div id="safar24" class="page">
+            <div class="backbtn" onclick="document.getElementById('gallery-link').click()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></div>
+            <h2>Safar'24</h2>
+            <div id="safar24-images" class="cards-section">
                 <div onclick="window.open('Photo/frame1.jpg')" class="image-frame"><img src="Photo/frame1.jpg"alt="Image 1"></div>
                 <div onclick="window.open('Photo/frame2.jpg')" class="image-frame"><img src="Photo/frame2.jpg"alt="Image 2"></div>
                 <div onclick="window.open('Photo/frame3.jpg')" class="image-frame"><img src="Photo/frame3.jpg"alt="Image 3"></div>

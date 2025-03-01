@@ -39,7 +39,7 @@ if (loggedInUser) {
         userPhoto.src = 'photo/Unknown.png'; 
     }
 } else {
-    window.location.href = 'https://failaq-users.vercel.app/'; 
+    window.location.href = 'index.html'; 
 }
 
 const ad = "Shahin Shadi CK"
@@ -78,7 +78,7 @@ links.forEach(link => {
 
 document.getElementById('logout-btn').addEventListener('click', () => {
     localStorage.clear(); 
-    window.location.href = 'https://failaq-users.vercel.app/'; 
+    window.location.href = 'index.html'; 
 });
 
 
@@ -97,46 +97,95 @@ fetch('users.json')
     })
     .catch(error => console.error('Error loading users:', error));
 
+    function h2022() {
+        window.open('Exam/H 2022-23/' + currentUserAd+".pdf"); 
+    }
 
-    function loadDocuments(documents) {
-        const documentsList = document.getElementById('documents-list');
-    documents.forEach(doc => {
-        const card = document.createElement('div');
-        card.classList.add('card');
-        card.innerHTML = `
-            <h3>${doc.title}</h3>
-            <p>${doc.description}</p>
-            <button onclick="viewDocument('${doc.pdf}')">Click Here</button>
-        `;
-        documentsList.appendChild(card);
-    });
-}
+    function a2022() {
+        window.open('Exam/2022-23/' + currentUserAd+".pdf"); 
+    }
+
+    function h2023() {
+        window.open('Exam/H 2023-24/' + currentUserAd+".pdf"); 
+    }
+
+    function a2023() {
+        window.open('Exam/2023-24/' + currentUserAd+".pdf"); 
+    }
+
+    function h2024() {
+        window.open('Exam/H 2024-25/' + currentUserAd+".pdf"); 
+    }
+
+    function a2024() {
+        window.open('Exam/2024-25/' + currentUserAd+".pdf"); 
+    }
+
+    function rsthz() {
+        window.open('Arts Fest/RASTAKHIZ/' + currentUserAd+".pdf"); 
+    }
+
+    function arpnt() {
+        window.open('Arts Fest/ARPANET/' + currentUserAd+".pdf"); 
+    }
+
+    function alkrm() {
+        window.open('Arts Fest/AL-KARAMA/' + currentUserAd+".pdf"); 
+    }
 
 
-function viewDocument(pdfUrl) {
-    window.open(pdfUrl, '_blank');
-}
+    //Achievements
 
-
-function loadArtsFest(artsFestDocuments) {
-    const artsFestList = document.getElementById('arts-fest-list'); 
+    function janac() {
+        window.open('Achievements/January/' + currentUserAd + ".pdf");
+    }
     
-    artsFestDocuments.forEach(doc => {
-        const card = document.createElement('div');
-        card.classList.add('card');
-        card.innerHTML = `
-            <h3>${doc.title}</h3>
-            <p>${doc.description}</p>
-            <button onclick="viewArtsFestDocument('${doc.pdf}')">Click Here</button>
-        `;
-        artsFestList.appendChild(card);
-    });
-}
+    function febac() {
+        window.open('Achievements/February/' + currentUserAd + ".pdf");
+    }
+    
+    function marac() {
+        window.open('Achievements/March/' + currentUserAd + ".pdf");
+    }
+    
+    function aprac() {
+        window.open('Achievements/April/' + currentUserAd + ".pdf");
+    }
+    
+    function mayac() {
+        window.open('Achievements/May/' + currentUserAd + ".pdf");
+    }
+    
+    function junac() {
+        window.open('Achievements/June/' + currentUserAd + ".pdf");
+    }
+    
+    function julac() {
+        window.open('Achievements/July/' + currentUserAd + ".pdf");
+    }
+    
+    function augac() {
+        window.open('Achievements/August/' + currentUserAd + ".pdf");
+    }
+    
+    function sepac() {
+        window.open('Achievements/September/' + currentUserAd + ".pdf");
+    }
+    
+    function octac() {
+        window.open('Achievements/October/' + currentUserAd + ".pdf");
+    }
+    
+    function novac() {
+        window.open('Achievements/November/' + currentUserAd + ".pdf");
+    }
+    
+    function decac() {
+        window.open('Achievements/December/' + currentUserAd + ".pdf");
+    }
 
+    
 
-function viewArtsFestDocument(pdfUrl) {
-    window.open(pdfUrl, '_blank');
-}
 
 
 function reload(){
@@ -254,19 +303,6 @@ let studentsData = [];
             }
         }, 21.5);
 
-        let mark = document.getElementById('mark1');
-        let targetElement4 = document.getElementById('mark1')
-        let count = 0;
-        let targetValue4 = parseInt(targetElement4.innerHTML, 10)
-        let intervalId4 = setInterval(()=>{
-            if(count >=targetValue4){
-                clearInterval(intervalId4);
-            }else{
-                count += 3;
-                mark.innerHTML = count 
-            }
-        },3)
-
 
         let number1 = document.getElementById('number2');
         let targetElement3 = document.getElementById('number2');
@@ -281,19 +317,6 @@ let studentsData = [];
             }
         }, 21.5);
 
-        let mark1 = document.getElementById('mark2');
-        let targetElement2 = document.getElementById('mark2')
-        let count1 = 0;
-        let targetValue2 = parseInt(targetElement2.innerHTML, 10)
-        let intervalId2 = setInterval(()=>{
-            if(count1 >=targetValue2){
-                clearInterval(intervalId2);
-            }else{
-                count1 += 4;
-                mark1.innerHTML = count1 
-            }
-        },5)
-
         let number2 = document.getElementById('number3');
         let targetElement1 = document.getElementById('number3');
         let counter2 = 0;
@@ -307,93 +330,9 @@ let studentsData = [];
             }
         }, 21.5);
         
-        let mark2 = document.getElementById('mark3'); 
-        let targetElement = document.getElementById('mark3'); 
-        let count2 = 0;
-        let targetValue = parseInt(targetElement.innerHTML, 10);
-        let intervalId = setInterval(() => {
-            if (count2 >= targetValue) {
-                clearInterval(intervalId); 
-            } else {
-                count2 += 4;
-                mark2.innerHTML = count2;
-            }
-        }, 5);
-
-        const track = document.querySelector('.carousel-track');
-        const items = Array.from(track.children);
-        const prevButton = document.getElementById('prevButton');
-        const nextButton = document.getElementById('nextButton');
-
-        // Clone the first and last items for seamless transition
-        const firstClone = items[0].cloneNode(true);
-        const lastClone = items[items.length - 1].cloneNode(true);
-
-        track.appendChild(firstClone);
-        track.insertBefore(lastClone, items[0]);
-
-        const updatedItems = Array.from(track.children);
-        const totalItems = updatedItems.length;
-
-        let currentIndex = 1;
-        const itemWidth = items[0].getBoundingClientRect().width;
-
-        // Initial positioning
-        track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-
-        function updateCarousel() {
-            track.style.transition = 'transform 0.5s ease-in-out';
-            track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-        }
-
-        function checkLoop() {
-            if (currentIndex === 0) {
-                track.style.transition = 'none'; // Disable transition for seamless loop
-                currentIndex = items.length;
-                track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-            } else if (currentIndex === totalItems - 1) {
-                track.style.transition = 'none'; // Disable transition for seamless loop
-                currentIndex = 1;
-                track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-            }
-        }
-
-        nextButton.addEventListener('click', () => {
-            currentIndex++;
-            updateCarousel();
-            setTimeout(checkLoop, 500);
-        });
-
-        prevButton.addEventListener('click', () => {
-            currentIndex--;
-            updateCarousel();
-            setTimeout(checkLoop, 500);
-        });
-
-        // Auto-slide every 3 seconds
-        setInterval(() => {
-            currentIndex++;
-            updateCarousel();
-            setTimeout(checkLoop, 500);
-        }, 3000);
-
-        window.addEventListener('resize', () => {
-            track.style.transition = 'none';
-            track.style.transform = `translateX(-${currentIndex * items[0].getBoundingClientRect().width}px)`;
-        });
 
         
 
-        const sibaq = document.getElementById('sibaq');
-        const sbq = document.getElementById('sbq')
-
-        if(window.innerWidth<=530){
-            sibaq.style.display = 'block'
-            sbq.style.display = 'block'
-        }else{
-            sibaq.style.display = 'none'
-            sbq.style.display = 'none'
-        }
 
         const menuIcon = document.getElementById('user-phot');
         const menu = document.getElementById('small');
@@ -619,5 +558,13 @@ let studentsData = [];
             document.getElementById("form").reset(); // Reset form fields
             document.getElementById("message").style.display = "none"; // Hide message
         });
+
+        const currentUserAd = loggedInUser.adno;
+
+
+        function janach() {
+            window.open('Photo/' + currentUserAd+".jpg"); 
+        }
+
         
 

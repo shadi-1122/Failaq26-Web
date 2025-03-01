@@ -84,6 +84,36 @@ position: relative;
     height: 100%;
     transition: left 0.3s ease;
     z-index: 1000;
+    overflow-y: auto;
+}
+
+/* Scrollbar Track */
+.sidebar::-webkit-scrollbar {
+    width: 10px;
+    border: 1px solid var(--light-color); /* Width of the scrollbar */
+}
+
+/* Scrollbar Handle (Thumb) */
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--hover-dark); /* Color of the scrollbar handle */
+    border-radius: 1px; /* Rounded corners */
+    border: 3px solid var(--main-color); /* Width of the scrollbar */
+}
+
+/* Scrollbar Handle on Hover */
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: var(--dark-color); /* Darker color on hover */
+}
+
+/* Scrollbar Track */
+.sidebar::-webkit-scrollbar-track {
+    background-color: var(--main-color); /* Color of the scrollbar track */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Scrollbar Track on Hover */
+.sidebar::-webkit-scrollbar-track:hover {
+    background-color: var(--main-color); /* Darker color on hover */
 }
 
 .sidebar.active {
@@ -143,6 +173,16 @@ position: relative;
 
     #me{
         color: #ffffff;
+    }
+
+    #arts-fest-union-link{
+        display: none;
+    }
+    #arts-fest-college-link{
+        display: none;
+    }
+    #safar24-link{
+        display: none;
     }
 
     /* Container */
@@ -311,6 +351,43 @@ position: relative;
         right: 10px;
         cursor: pointer;
     }
+
+    .backbtn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 10px;
+        bottom: -10px;
+        width: 40px; 
+        height: 40px;   
+        background-color: var(--dark-color); 
+        border-radius: 50%; 
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    .backbtn:hover {
+        background-color: var(--hover-dark); 
+        transform: scale(1.1); 
+    }
+    
+    .backbtn:active {
+        transform: scale(0.95); 
+    }
+    
+    .backbtn svg {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        fill: #FFFFFF;
+        transition: transform 0.2s ease;
+    }
+    
+    .backbtn:hover svg {
+        transform: translateX(-5px); 
+    }
+
     
     
     .overlay {
@@ -779,6 +856,12 @@ position: relative;
         font-size: 18px;
         color: var(--dark-color);
     }
+
+    .card h1 {
+        margin: 20px 0 10px;
+        font-size: 25px;
+        color: var(--dark-color);
+    }
     
     .card p {
         font-size: 14px;
@@ -802,6 +885,14 @@ position: relative;
         
     }
 
+    .card img{
+        margin: 20px;
+        border-radius: 50%;
+        width: 115px;
+        height: 115px;
+        border: 1.5px solid var(--dark-color);
+    }
+
     #entry-link{
         display: none;
     }
@@ -809,6 +900,7 @@ position: relative;
     .cards {
         background-color: var(--dark-color);
         padding: 15px;
+        margin: 20px;
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         text-align: center;
@@ -1347,7 +1439,19 @@ position: relative;
         background-color: #f2f2f2;
     }
 
-
+    .chart-container {
+        position: relative;
+        margin: 20px;
+        width: 100px;
+    }
+    .chart-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 12px;
+        font-weight: bold;
+    }
 
     .student-info {
         padding: 20px;
@@ -1402,7 +1506,7 @@ position: relative;
             gap: 20px;  
          }
 
-        .cards-sections{
+         .cards-sections{
             display: grid;
             grid-template-columns:auto;
             gap: 20px;  
@@ -1444,6 +1548,12 @@ position: relative;
         .result-section{
             width: 320px;
         }
+
+        .backbtn{
+            top: auto;
+            margin-bottom: 30px;
+        }
+
 
         #password-list{
             margin-left: 0%;

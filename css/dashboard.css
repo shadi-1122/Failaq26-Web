@@ -574,19 +574,19 @@ position: relative;
 
     @keyframes anim{
         100%{
-            stroke-dashoffset: 30;
+            stroke-dashoffset: 29;
         }
     }
 
     @keyframes anim1{
         100%{
-            stroke-dashoffset: 30;
+            stroke-dashoffset: 36;
         }
     }
 
     @keyframes anim2{
         100%{
-            stroke-dashoffset: 34;
+            stroke-dashoffset: 36;
         }
     }
     

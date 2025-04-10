@@ -33,7 +33,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
         localStorage.setItem('loggedInUser', JSON.stringify(user));
 
         // Redirect to the user details page (parent dashboard)
-        window.location.href = 'https://failaq-users.vercel.app/Dashboard';
+        window.location.href = 'https://failaqportal.vercel.app/Dashboard';
     } else {
         // Show error message if login fails
         document.getElementById('error-message').textContent = 'Invalid username or password';

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Management</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      background: #fff;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    form input, form button {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    form button {
+      grid-column: span 2;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    button {
+      margin: 2px;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>User Management</h2>
+    <form id="user-form">
+      <input type="hidden" id="user-id">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="text" id="phone" placeholder="Phone" required />
+      <button type="submit" id="submit-btn">Add User</button>
+    </form>
+
+    <table id="user-table">
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Password</th>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxkmps30RWVTl-V5WVYFqzzYFhCAiRCdk3Tuxr70BTGwnoxmVn3bXlwlgqLtmaM27JI6g/exec';
+    
+    // Load the users when the page is loaded
+    document.addEventListener('DOMContentLoaded', loadUsers);
+    document.getElementById('user-form').addEventListener('submit', handleFormSubmit);
+  
+    // Function to load all users
+    function loadUsers() {
+      fetch(scriptURL)
+        .then(res => res.json())
+        .then(data => {
+          const tbody = document.querySelector('#user-table tbody');
+          tbody.innerHTML = '';
+          data.forEach(user => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+              <td>${user.Username}</td>
+              <td>${user.Password}</td>
+              <td>${user.Name}</td>
+              <td>${user.phone}</td>
+              <td>
+                <button onclick='editUser(${JSON.stringify(user)})'>Edit</button>
+                <button onclick='deleteUser("${user.id}")'>Delete</button>
+              </td>`;
+            tbody.appendChild(tr);
+          });
+        })
+        .catch(err => console.log('Error loading users:', err));
+    }
+  
+    // Handle the form submission (add or update user)
+    function handleFormSubmit(e) {
+      e.preventDefault();  // Prevent form from submitting normally
+      const id = document.getElementById('user-id').value;
+      const Username = document.getElementById('username').value;
+      const Password = document.getElementById('password').value;
+      const Name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+  
+      // Determine the action (add or update)
+      const action = id ? 'update' : 'add';
+  
+      // Prepare the data to send
+      const userData = { id, Username, Password, Name, phone, action };
+  
+      fetch(scriptURL, {
+        method: 'POST',
+        body: JSON.stringify(userData),
+        headers: { 'Content-Type': 'application/json' }
+      })
+      .then(res => res.text())
+      .then(() => {
+        document.getElementById('user-form').reset();
+        document.getElementById('submit-btn').textContent = 'Add User';
+        loadUsers();  // Reload users after adding or updating
+      })
+      .catch(err => console.log('Error submitting user data:', err));
+    }
+  
+    // Function to edit an existing user
+    function editUser(user) {
+      document.getElementById('user-id').value = user.id;
+      document.getElementById('username').value = user.Username;
+      document.getElementById('password').value = user.Password;
+      document.getElementById('name').value = user.Name;
+      document.getElementById('phone').value = user.phone;
+      document.getElementById('submit-btn').textContent = 'Update User';  // Change button text
+    }
+  
+    // Function to delete a user
+    function deleteUser(id) {
+      fetch(scriptURL, {
+        method: 'POST',
+        body: JSON.stringify({ id, action: 'delete' }),
+        headers: { 'Content-Type': 'application/json' }
+      })
+      .then(res => res.text())
+      .then(() => loadUsers())  // Reload users after deleting
+      .catch(err => console.log('Error deleting user:', err));
+    }
+  </script>
+  
+</body>
+</html>

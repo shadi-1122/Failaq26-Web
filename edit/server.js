@@ -36,15 +36,21 @@ app.get('/load-users', async (req, res) => {
 app.post('/save-users', async (req, res) => {
     try {
         const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`;
+        
+        // Fetch latest file info
+        const fileInfo = await axios.get(url, { headers });
+        const latestSha = fileInfo.data.sha;
+
+        // Prepare new content
         const contentEncoded = Buffer.from(JSON.stringify(req.body, null, 2)).toString('base64');
 
-        const response = await axios.put(url, {
+        // Update file
+        await axios.put(url, {
             message: 'Update users.json from web editor',
             content: contentEncoded,
             sha: latestSha
         }, { headers });
 
-        latestSha = response.data.content.sha;
         res.json({ success: true });
     } catch (err) {
         console.error('Error saving:', err.response?.data || err.message);

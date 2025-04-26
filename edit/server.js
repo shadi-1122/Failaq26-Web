@@ -21,30 +21,35 @@ const headers = {
     Accept: 'application/vnd.github.v3+json'
 };
 
-let latestSha = '';
-
 app.get('/load-users', async (req, res) => {
     try {
-        const response = await axios.get(`https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${FILE_PATH}`);
-        res.json(response.data);
+        const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`;
+        const response = await axios.get(url, { headers });
+
+        // Decode base64 content
+        const content = Buffer.from(response.data.content, 'base64').toString('utf-8');
+        const jsonContent = JSON.parse(content);
+
+        res.json(jsonContent);
     } catch (err) {
-        console.error('Error loading users:', err);
-        res.status(500).json({ error: 'Could not load users' });
+        console.error('Error loading users:', err.response?.data || err.message);
+        res.status(500).json({ error: 'Could not load users.' });
     }
 });
 
+// Route to save users
 app.post('/save-users', async (req, res) => {
     try {
         const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`;
-        
-        // Fetch latest file info
+
+        // STEP 1: Get latest SHA
         const fileInfo = await axios.get(url, { headers });
         const latestSha = fileInfo.data.sha;
 
-        // Prepare new content
+        // STEP 2: Prepare new content
         const contentEncoded = Buffer.from(JSON.stringify(req.body, null, 2)).toString('base64');
 
-        // Update file
+        // STEP 3: Update file on GitHub
         await axios.put(url, {
             message: 'Update users.json from web editor',
             content: contentEncoded,
@@ -53,10 +58,11 @@ app.post('/save-users', async (req, res) => {
 
         res.json({ success: true });
     } catch (err) {
-        console.error('Error saving:', err.response?.data || err.message);
-        res.status(500).json({ error: 'Could not save file.' });
+        console.error('Error saving users:', err.response?.data || err.message);
+        res.status(500).json({ error: 'Could not save users.' });
     }
 });
 
+// Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));

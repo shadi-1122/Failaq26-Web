@@ -40,7 +40,7 @@
     let users = [];
 let headers = []; // Move headers here so it’s globally accessible
 
-fetch('http://localhost:3000/load-users')
+fetch('https://failaq26-web.onrender.com/load-users')
   .then(response => response.json())
   .then(data => {
     users = Array.isArray(data) ? data : [];
@@ -112,7 +112,7 @@ function saveChanges() {
     });
 
     // Send updated data to server
-    fetch('http://localhost:3000/save-users', {
+    fetch('https://failaq26-web.onrender.com/load-users/save-users', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
